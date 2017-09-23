@@ -1,0 +1,46 @@
+body{
+	background-color: rgb(111, 111, 111);
+	margin: 0px;
+}
+.menu{
+	margin: auto;
+	background-color: rgb(59, 59, 59);
+	border-spacing: 0px;
+	border-collapse: collapse;
+	height: 100px;
+	width: 1360px;
+	
+}
+h2{
+	font-size: 45px;
+	font-family: Orator Std;
+	color: white;
+}
+.top{
+	margin: 0px;
+	background-color: rgb(59, 59, 59);
+	width: 100%;
+	height: 100px;
+}
+.menu_var{
+	text-align: center;
+	width: 320px;
+}
+.pul{
+	text-align: center;
+	color: white;
+}
+.main{
+	margin: auto;
+	background-color: rgb(98, 98, 98);
+	width: 1100px;
+}
+
+p{
+	color: white;
+	font-size: 28px;
+}
+p>h2{
+	font-family: Orator Std;
+	text-align: right;
+}

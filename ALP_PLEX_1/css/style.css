@@ -1,0 +1,64 @@
+body{
+	background-color: black;
+}
+
+.menu{
+	text-align: center;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgb(255, 72, 72);
+	border-width: 4px;
+	border-color: white;
+	margin: 15px;
+}
+.menu > a:hover{
+	color: #48afff
+}
+.menu_rs{
+	text-align: center;
+	font-size: 20px;
+}
+
+.page_menu{
+}
+
+a:visited{
+	color: rgb(255, 72, 72);
+}
+
+a{
+	color: rgb(255, 72, 72);
+}
+p{
+	color: white;
+}
+h1{
+
+	color: #48afff;
+	font-size: 35px
+
+}
+h2{
+	color: rgb(255, 72, 72);
+}
+h3{
+	color: white;
+}
+h4{
+	color: white;
+}
+h5{
+	color: white;
+}
+h6{
+	color: white;
+}
+li{
+	color: white;
+}
+.gallery{
+	list-style-type: none;
+}
+.form{
+	background-color: grey;
+}
