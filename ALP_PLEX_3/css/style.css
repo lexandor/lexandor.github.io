@@ -1,0 +1,90 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-repeat: repeat-x;
+	background-color: rgb(72, 72, 72);
+	background-image: url(../img/bg.png);
+}
+.logo{
+	float: left;
+	margin-top: 24px;
+	margin-left: 45px;
+	padding-right: 200px;
+}
+.menu{
+	display: inline-block;
+	padding: 5px 30px 15px 30px;
+	margin-top: 40px;
+	font-size: 44px;
+	position: relative;
+	top: 4px;
+	font-family: Minion Pro;
+	
+}
+.menu>a{
+	text-decoration: none;
+	color: white;
+}
+.menu>a:hover{
+	color: #ff3333;
+}
+nav{
+	background-color: #000000;
+	height: 170px;
+	text-align: center;
+	position: relative;
+}
+.this>a{
+	color: #ff3333;
+}
+#email{
+	margin: 0px 75px 0px 0px;
+	float: right;
+	display: inline-block;
+	color: #999999;
+	font-family: Minion Pro;
+	font-size: 36px;
+}
+
+header{
+	background-color: white;
+	width: 845px;
+	height: 500px;
+    margin: auto;
+    min-width:845px;
+    position: relative;
+}
+header>img{
+	margin-left: 120px;
+	position: absolute;
+}
+div{
+	margin: auto;
+	background-color: #151515;
+	height: 150px;
+	width: 845px;
+}
+main, section{
+	margin: auto;
+	width: 845px;
+	height: 800px;
+	background-color: rgb(98, 98, 98);
+	color: white;
+	font-size: 30px;
+
+}
+main>img{
+	float: left;
+	border: none;
+}
+main>h2{
+	font-family: Orator Std;
+	padding-top: 15px;
+	padding-left: 430px;
+}
+footer{
+	background-color: #000000;
+	height: 170px;
+}
