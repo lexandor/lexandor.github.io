@@ -1,0 +1,292 @@
+/*===========================================
+				HELPERS
+============================================*/
+
+*{
+	margin: 0;
+	position: 0;
+}
+
+body{
+	background-color: #f6f2f2;
+	font-family: sans-serif;
+	height: 3000px;
+}
+
+p{
+	line-height: 22px;
+	color: #737373;
+	/*font-family: Open Sans;*/
+}
+
+.container{
+	padding: 0px 120px;
+}
+
+.clearfix{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.container-white{
+	background-color: #fff;
+	padding-top: 100px;
+	padding-bottom: 40px;
+}
+
+.center{
+	margin: auto;
+}
+
+.line{
+	contain: "";
+	border: 1px solid #ff4848;
+	width: 130px;
+	margin-top: 35px;
+}
+
+/*===========================================
+				TEXT
+============================================*/
+
+.text-center{
+	text-align: center;
+}
+
+.subscribe{
+
+}
+
+h1{
+	font-weight: bold;
+	font-size: 3em;
+	text-transform: uppercase;
+	/*font-family: Open Sans;
+	font-style: Extra Bold;*/
+}
+
+h2{
+	font-weight: bold;
+	font-size: 2em;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	color: #585858;
+}
+
+h3{
+	margin-bottom: 20px;
+	color: #737373;
+}
+
+
+/*===========================================
+				BUTTONS
+============================================*/
+
+.button{
+	height: 20px;
+	width: 225px;
+	background-color: #ff2d2d;
+	padding: 10px 0px;
+	border-radius: 5px;
+}
+
+.button:hover{
+	background-color: #c22222;
+}
+
+.button>a{
+	padding: 20px 68px;
+	font-weight: bold;
+	text-align: center;
+	color: #f6f2f2;
+	text-decoration: none;
+}
+
+.btn{
+	border: 2px solid #ff0000;
+	background-color: #fff;
+	margin-bottom: 120px;
+}
+
+.btn:hover{
+	border-color: #c22222;
+}
+
+.btn>a{
+	font-weight: bold;
+	color: #ff0000;
+
+}
+
+.btn>a:hover{
+	color: #fff;
+}
+
+/*===========================================
+				NAVBAR
+============================================*/
+
+.navWrapper{
+	max-width: 1254;
+	margin-top: 25px;
+	background-color: #313030;
+}
+
+nav{
+	margin: auto;
+	min-height: 80px;
+}
+
+.menu{
+	padding: 0px;
+	margin: auto;
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.menu_item{
+	height: 100%;
+	padding: 35px 0px;
+}
+
+.menu_item:hover{
+	background-color: #ff3f40;
+}
+
+.menu_item_link{
+	padding: 35px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #f6f2f2;
+}
+
+/*===========================================
+				HEADER
+============================================*/
+
+.headerContent{
+	margin-top: 80px;
+	padding-bottom: 115px;
+}
+
+.screamTitle{
+	float: left;
+	max-width: 50%;
+}
+
+.screamTitle>p{
+	margin-top: 20px;
+	margin-bottom: 62px;
+	line-height: 30px;
+	color: #6f6d6d;
+	/*font-family: OpenSans;*/
+}
+
+/*===========================================
+				SPECIALISATION
+============================================*/
+
+.ourOfers>p{
+	margin-top: 20px;
+	margin-bottom: 40px;
+	color: #000;
+}
+
+.ourOfers{
+	float: left;
+	width: 40%;
+	margin-right: 45px;
+}
+
+.ficha_blok{
+	margin-left: 40px;
+	margin-bottom: 25px;
+	float: left;
+	width: 22%;
+}
+
+.ficha_icon{
+	margin-bottom: 10px;
+}
+
+.ficha_icon>img{
+	height: 60px;
+}
+
+/*===========================================
+				PRODUCTS
+============================================*/
+
+.fich_title{
+	margin: auto;
+	margin-top: 100px;
+}
+
+.fich_title>h2{
+	text-align: center;
+}
+
+.fich_title>p{
+	text-align: center;
+	max-width: 570px;
+}
+
+.fich{
+ margin-top: 25px;
+}
+
+.fich_controller{
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+}
+
+.fich_controller>li:hover{
+	color: #585858;
+}
+
+.fich_controller>li:first-child{
+	margin-left: 0px;
+}
+
+.fich_controller>li{
+	margin-left: 50px;
+	list-style-type: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #737373;
+}
+
+.fich_controller>li.displayed{
+	color: #ff2d2d;
+}
+
+.fich_tablet{
+	margin: 20px 0px;
+	box-sizing: border-box;
+	min-height: 680px;
+	width: 100%;
+	display: none;
+}
+
+.fich_tablet.displayed{
+	display: block;
+}
+
+.fich_tablet>img{
+	margin: 15px 15px 0px 15px;
+	width: 243px;
+}
+
+/*===========================================
+				OUR TEAM
+============================================*/
+
+.team_title{
+	width: 500px;
+
+}
