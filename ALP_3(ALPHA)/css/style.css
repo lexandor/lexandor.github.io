@@ -7,16 +7,16 @@
 	position: 0;
 }
 
-body{
-	background-color: #f6f2f2;
-	font-family: sans-serif;
-	height: 3000px;
+.t{
+	height: 5000px;
+	content: "";
+	background-color: black;
 }
 
-p{
-	line-height: 22px;
-	color: #737373;
-	/*font-family: Open Sans;*/
+body{
+	background-color: #f6f2f2;
+	font-family: Open Sans;
+	height: 3000px;
 }
 
 .container{
@@ -58,16 +58,22 @@ p{
 
 }
 
+p{
+	line-height: 22px;
+	color: #737373;
+	font-family: Open Sans;
+}
+
 h1{
 	font-weight: bold;
 	font-size: 3em;
 	text-transform: uppercase;
-	/*font-family: Open Sans;
-	font-style: Extra Bold;*/
+	font-family: Open Sans;
+	font-weight: 800;
 }
 
 h2{
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 2em;
 	text-transform: uppercase;
 	margin-bottom: 20px;
@@ -77,6 +83,16 @@ h2{
 h3{
 	margin-bottom: 20px;
 	color: #737373;
+	font-weight: 600;
+
+}
+
+h4{
+	color: #585858;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	font-weight: 600;
 }
 
 
@@ -90,6 +106,7 @@ h3{
 	background-color: #ff2d2d;
 	padding: 10px 0px;
 	border-radius: 5px;
+	transition: 0.2s;
 }
 
 .button:hover{
@@ -98,7 +115,7 @@ h3{
 
 .button>a{
 	padding: 20px 68px;
-	font-weight: bold;
+	font-weight: 700;
 	text-align: center;
 	color: #f6f2f2;
 	text-decoration: none;
@@ -117,11 +134,20 @@ h3{
 .btn>a{
 	font-weight: bold;
 	color: #ff0000;
+	padding: 20px 62px;
 
 }
 
 .btn>a:hover{
 	color: #fff;
+}
+
+.sentButton{
+	width: 145px;
+}
+
+.sentButton>a{
+	padding: 20px 55px;
 }
 
 /*===========================================
@@ -151,6 +177,7 @@ nav{
 .menu_item{
 	height: 100%;
 	padding: 35px 0px;
+	transition: 0.4s;
 }
 
 .menu_item:hover{
@@ -162,6 +189,7 @@ nav{
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #f6f2f2;
+	font-weight: 700;
 }
 
 /*===========================================
@@ -243,6 +271,8 @@ nav{
 	padding: 0px;
 	display: flex;
 	justify-content: center;
+	cursor: pointer;
+	transition: 0.15s;
 }
 
 .fich_controller>li:hover{
@@ -259,6 +289,7 @@ nav{
 	text-transform: uppercase;
 	font-weight: bold;
 	color: #737373;
+	font-weight: 600;
 }
 
 .fich_controller>li.displayed{
@@ -288,5 +319,157 @@ nav{
 
 .team_title{
 	width: 500px;
+}
 
+.team{
+	margin-top: 40px;
+}
+
+.team_tablet{
+	width: 650px;
+	float: right;
+	margin: 50px 130px 0px 0px;
+	display: none;
+
+}
+
+.team_tablet.displayed{
+	display: block;
+}
+
+.team_controller{
+	margin: 0px;
+	padding: 0px;
+	margin-top: 35px;
+	display: flex;
+	align-items: flex-end;
+}
+
+.team_controller_item{
+	list-style-type: none;
+	width: 180px;
+	height: 180px;
+	background-color: #f5f0dd;
+	margin-left: 18px;
+	position: relative;
+	border: 2px solid #585858;
+	margin-bottom: 50px;
+	cursor: pointer;
+}
+
+.team_controller_item.displayed{
+	border: 2px solid rgba(255, 59, 59, 0.69);
+}
+
+.team_controller_item>img{
+	height: 100%;
+	width: 180px;
+	cursor: pointer;
+}
+
+.team_controller_item>img:hover{
+}
+
+.leader{
+	height: 380px;
+	width: 270px;
+	margin-right: 60px;
+	margin-left: 0px;
+	background-color: #f5f0dd;
+	position: relative;
+}
+
+.leader>img{
+	box-sizing: border-box;
+	height: 380px;
+	width: 270px;
+}
+
+.sub_contacts{
+	display: flex;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 15px;
+}
+
+.sub_contacts>li{
+	margin-left: 18px;
+	list-style-type: none;
+	position: relative;
+}
+
+.sub_contacts>li:first-child{
+	margin-left: 0px;
+}
+
+.sub_contacts>li>a{
+	font-style: italic;
+	color: #585858;
+}
+
+.sub_contacts>li>a:hover{
+	color: #ff2d2d;
+}
+
+.sub_name{
+	background-color: rgba(0, 0, 0, 0.72);
+	color: #fff;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 1em;
+	display: none;
+	padding: 5px 0px;
+
+}
+
+.team_controller_item>img:hover + .sub_name{
+	display: block;
+	bottom: 0;
+
+}
+
+/*===========================================
+				HUNTER
+============================================*/
+
+.hunterWrapper{
+	width: 100%;
+	height: 510px;
+	background: url(../img/of.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.hunterWrapperDark{
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 500;
+	width: 100%;
+	height: 100%;
+}
+
+.hunter_title{
+	width: 60%;
+	padding: 130px 0px 0px 0px;
+}
+
+.hunter_title>h2{
+	color: #fdfcf8;
+}
+
+.joinTeam{
+	margin-top: 65px;
+	display: flex;
+	justify-content: center;
+}
+
+.hunter_input{
+	margin-right: 30px;
+	border-radius: 5px;
+	border: none;
+	padding: 5px 5px 5px 15px;
+	width: 345px;
 }
