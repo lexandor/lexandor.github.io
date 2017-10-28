@@ -4,7 +4,7 @@
 
 *{
 	margin: 0;
-	position: 0;
+	padding: 0;
 }
 
 .t{
@@ -16,7 +16,7 @@
 body{
 	background-color: #f6f2f2;
 	font-family: Open Sans;
-	height: 3000px;
+	/* height: 3000px; */
 }
 
 .container{
@@ -226,12 +226,27 @@ nav{
 	margin-bottom: 62px;
 	line-height: 30px;
 	color: #6f6d6d;
-	/*font-family: OpenSans;*/
+	font-family: Open Sans;
+}
+
+.video{
+	height: 250px;
+	width: 450px;
+	border: 2px solid #313030;
+	content: "";
+	margin-left: 100px;
+	margin-top: 50px;
 }
 
 /*===========================================
 				SPECIALISATION
 ============================================*/
+
+.fichaWrapper{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
 
 .ourOfers>p{
 	margin-top: 20px;
@@ -243,6 +258,10 @@ nav{
 	float: left;
 	width: 40%;
 	margin-right: 45px;
+}
+
+.ficha{
+
 }
 
 .ficha_blok{
@@ -342,7 +361,8 @@ nav{
 
 .team_tablet{
 	width: 650px;
-	float: right;
+	position: absolute;
+	left: 470px;
 	margin: 50px 130px 0px 0px;
 	display: none;
 
@@ -357,13 +377,14 @@ nav{
 	padding: 0px;
 	margin-top: 35px;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: flex-end;
 }
 
 .team_controller_item{
 	list-style-type: none;
-	width: 180px;
-	height: 180px;
+	width: 170px;
+	height: 170px;
 	background-color: #f5f0dd;
 	margin-left: 18px;
 	position: relative;
@@ -378,7 +399,7 @@ nav{
 
 .team_controller_item>img{
 	height: 100%;
-	width: 180px;
+	width: 170px;
 	cursor: pointer;
 }
 
@@ -389,6 +410,7 @@ nav{
 	height: 380px;
 	width: 270px;
 	margin-right: 60px;
+	/* margin-right: 27px; */
 	margin-left: 0px;
 	background-color: #f5f0dd;
 	position: relative;
@@ -495,15 +517,19 @@ nav{
 
 .contact_title{
 	width: 600px;
+	margin: 100px 0px 0px 120px;
 }
 
 .contact{
 	display: flex;
+	flex-wrap: wrap;
 	position: relative;
+	padding: 0px 120px 65px 120px;
 }
 
 .contact_form{
-	width: 600px;
+	/* width: 600px; */
+	width: 52%;
 	margin-top: 70px;
 	display: flex;
 	flex-wrap: wrap;
@@ -540,11 +566,12 @@ nav{
 .contact_info{
 	margin-top: 70px;
 	height: 365px;
-	position: relative;
+	position: absolute;
 	box-sizing: border-box;
-	right: -160px;
 	top: 0px;
-	width: 580px;
+	right: 0px;
+	width: 40%;
+	/* width: 505px; */
 	background-color: #191919;
 	padding: 82px 80px;
 }
@@ -553,6 +580,7 @@ nav{
 	color: #e0e0e0;
 	margin-bottom: 15px;
 }
+
 
 /*===========================================
 				FOOTER
