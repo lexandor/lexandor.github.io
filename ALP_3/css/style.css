@@ -21,6 +21,7 @@ body{
 
 .container{
 	padding: 0px 120px;
+	position: relative;
 }
 
 .clearfix{
@@ -170,7 +171,7 @@ h5{
 ============================================*/
 
 .navWrapper{
-	max-width: 1254;
+	max-width: 100%;
 	margin-top: 25px;
 	background-color: #313030;
 }
@@ -234,7 +235,7 @@ nav{
 	width: 450px;
 	border: 2px solid #313030;
 	content: "";
-	margin-left: 100px;
+	margin-left: 90px;
 	margin-top: 50px;
 }
 
@@ -344,7 +345,7 @@ nav{
 
 .fich_tablet>img{
 	margin: 15px 15px 0px 15px;
-	width: 243px;
+	width: 240px;
 }
 
 /*===========================================
@@ -362,7 +363,7 @@ nav{
 .team_tablet{
 	width: 650px;
 	position: absolute;
-	left: 470px;
+	left: 460px;
 	margin: 50px 130px 0px 0px;
 	display: none;
 
@@ -409,7 +410,7 @@ nav{
 .leader{
 	height: 380px;
 	width: 270px;
-	margin-right: 60px;
+	margin-right: 50px;
 	/* margin-right: 27px; */
 	margin-left: 0px;
 	background-color: #f5f0dd;
@@ -588,4 +589,257 @@ nav{
 
 footer{
 	padding: 35px 5px;
+}
+
+/*===========================================
+				@MEDIA
+============================================*/
+
+@media screen and (max-width: 1280px) {
+
+	.screamTitle{
+		max-width: 75%;
+	}
+	
+	video.video{
+		margin-left: 0px;
+
+	}
+
+	.ourOfers{
+		width: 80%;
+		margin: auto;
+	}
+
+	.ficha_blok{
+		width: 40%;
+	}
+
+	.fich_tablet>img{
+		width: 45%;
+	}
+
+	.team_title{
+		margin-top: 70px;
+	}
+
+	.team_tablet{
+		width: 50%;
+		    margin: 25px 130px 0px 0px
+	}
+
+	.team_controller{
+		justify-content: space-around;
+	}
+    
+    .team_controller_item.leader{
+    	height: 380px;
+    	width: 270px;
+	}
+
+	.team_controller_item.leader>img{
+		box-sizing: border-box;
+    	height: 380px;
+   		width: 270px;
+
+	}
+
+	.team_controller_item{
+		width: 205px;
+		height: 205px;
+		/*margin-left: 0px;*/
+	}
+
+	.team_controller_item>img{
+		width: 205px;
+	}
+
+	.contact_form .button>a{
+		padding: 20px 145px;
+	}
+}
+
+@media screen and (max-width: 820px) {
+
+	.screamTitle{
+		max-width: 100%;
+	}
+	
+	video.video{
+		margin-left: 0px;
+	}
+	
+	.team_controller{
+		margin-top: 80px;
+	}
+	
+	.team_controller_item{
+		display: none;
+	}
+
+	.team_controller_item.leader{
+		display: block;
+	}
+
+	.leader{
+		margin: 0px;
+	}
+
+	.sub_contacts{
+		justify-content: space-around;
+	}
+
+	.team_tablet{
+		position: static;
+		width: 80%;
+		margin: auto;
+		text-align: center;
+	}
+
+	.fich_tablet>img{
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	.contact_form .button>a{
+		padding: 20px 75px;
+	}
+}
+
+@media screen and (max-width: 768px){
+
+	.email{
+		margin-top: 20px;
+	}
+
+	.contact_form>input{
+		width: 100%;
+	}
+
+	.contact_form .button>a{
+		padding: 20px 50px;
+	}
+}
+
+@media screen and (max-width: 685px){
+
+	.container{
+		padding: 20px 40px;
+	}
+
+	.menu{
+		display: block;
+	}
+
+	.menu_item_link{
+    	padding: 35px 105px;
+	}
+
+	video.video{
+		display: none;
+	}
+
+	.ficha_blok{
+		width: 90%;
+		margin: auto;
+		margin-bottom: 40px;
+	}
+	
+	.fich_controller{
+		flex-wrap: wrap;
+	}
+
+	.fich_controller>li {
+    	margin: auto;
+    	margin-top: 20px;
+	}
+
+	.team_title{
+		width: 100%;
+	}
+
+	.hunter_title{
+		width: 100%;
+	}
+
+	.joinTeam{
+		flex-wrap: wrap;
+		margin-top: 35px;
+	}
+
+	.hunter_input{
+		padding: 10px 5px 10px 15px;
+		margin-right: 0px;
+	}
+
+	.sentButton{
+		margin-top: 20px;
+	}
+
+	.contact_title{
+		width: 100%;
+		margin: 0px;
+		margin-top: 60px;
+	}
+
+	.contact {
+    	display: block;
+    	/*flex-wrap: wrap;*/
+    	position: relative;
+    	padding: 0px;
+	}
+
+	.contact_form {
+	    width: 100%;
+	    margin-top: 70px;
+	}
+
+	.contact_info{
+		position: static;
+		margin-top: 70px;
+	    width: 100%;
+	    padding: 60px 20px;
+	    margin-bottom: 20px;
+	}
+
+	.contact_form .button>a {
+    	padding: 20px 90px;
+	}
+
+	.container-contact{
+		padding: 20px 40px; 
+	}
+
+}
+
+@media screen and (max-width: 375px){
+
+	.container, .container-contact{
+		padding: 20px 20px;
+	}
+
+	.line{
+		margin: auto;
+		margin-top: 35px;
+	}
+
+	.menu_item_link{
+    	padding: 35px 75px;
+	}
+
+	h1{
+		font-size: 2.4em;
+	}
+
+	.sub_contacts{
+		flex-wrap: wrap;
+	}
+
+	.sub_contacts>li{
+		margin-left: 0px;
+	}
+
+	.contact_form .button>a {
+    	padding: 20px 70px;
+	}
 }
