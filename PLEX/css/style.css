@@ -1,0 +1,359 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*===========================================
+				HELPERS
+============================================*/
+/* line 5, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 15, ../sass/style.scss */
+.clearfix {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* line 22, ../sass/style.scss */
+.container * {
+  z-index: 100;
+}
+
+/* line 27, ../sass/style.scss */
+.dark {
+  background-color: #121212;
+}
+
+/* line 31, ../sass/style.scss */
+.light {
+  z-index: 300;
+  background-color: #fff;
+}
+
+/* line 36, ../sass/style.scss */
+.row {
+  clear: both;
+}
+
+/*===========================================
+               TEXT
+============================================*/
+@font-face {
+  font-family: "reg";
+  src: url(../fonts/HelveticaRegular.ttf);
+}
+@font-face {
+  font-family: "bold";
+  src: url(../fonts/HelveticaBold.ttf);
+}
+@font-face {
+  font-family: "light";
+  src: url(../fonts/HelveticaLight.ttf);
+}
+/* line 59, ../sass/style.scss */
+h1 {
+  font-size: 4em;
+  font-family: bold;
+  color: #fff;
+}
+
+/* line 65, ../sass/style.scss */
+h2 {
+  font-size: 2em;
+  font-family: reg;
+  color: #fff;
+}
+
+/* line 71, ../sass/style.scss */
+h3 {
+  margin-top: 10px;
+  font-family: reg;
+  font-size: 3em;
+  color: #69e44d;
+}
+
+/* line 78, ../sass/style.scss */
+h4, h5 {
+  font-family: bold;
+  font-size: 1.5em;
+}
+
+/* line 83, ../sass/style.scss */
+h5 {
+  color: white;
+}
+
+/* line 88, ../sass/style.scss */
+h6 {
+  font-family: reg;
+  font-size: 1.15em;
+}
+
+/* line 93, ../sass/style.scss */
+.upcase {
+  text-transform: uppercase;
+}
+
+/* line 97, ../sass/style.scss */
+.bold {
+  font-family: bold;
+}
+
+/* line 101, ../sass/style.scss */
+.title {
+  line-height: 42px;
+  margin-top: 30px;
+}
+
+/* line 106, ../sass/style.scss */
+p {
+  font-size: 1.1em;
+  margin-top: 20px;
+  line-height: 25px;
+  font-family: light;
+  color: #646464;
+}
+
+/*===========================================
+               NAVIGATION
+============================================*/
+/* line 118, ../sass/style.scss */
+nav {
+  padding: 20px 0px;
+}
+
+/* line 122, ../sass/style.scss */
+#signup {
+  background-color: #121212;
+  color: white;
+  border-color: #2e2e2e;
+  font-family: reg;
+}
+/* line 127, ../sass/style.scss */
+#signup:hover {
+  background-color: #2e2e2e;
+}
+/* line 130, ../sass/style.scss */
+#signup:active {
+  background-color: #22b737;
+}
+
+/* line 135, ../sass/style.scss */
+.logo {
+  width: 100px;
+  height: 50px;
+  background: url(../img/PLEX_LOGO.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* line 145, ../sass/style.scss */
+.menu .menu_item_link {
+  color: white;
+  font-family: reg;
+}
+/* line 148, ../sass/style.scss */
+.menu .menu_item_link:hover {
+  color: #69e44d;
+  background-color: #202020;
+  border-radius: 30%;
+}
+
+/*===========================================
+               HEADER
+============================================*/
+/* line 160, ../sass/style.scss */
+.scream {
+  margin-top: 160px;
+  margin-bottom: 285px;
+  line-height: 60px;
+}
+
+/* line 166, ../sass/style.scss */
+#getstart {
+  background-color: #22b737;
+  color: white;
+  border-color: #22b737;
+  font-family: reg;
+  width: 165px;
+}
+/* line 172, ../sass/style.scss */
+#getstart:hover {
+  background-color: #69e44d;
+  border-color: #69e44d;
+}
+/* line 176, ../sass/style.scss */
+#getstart:active {
+  background-color: #69e44d;
+  border-color: #22b737;
+}
+
+/* line 182, ../sass/style.scss */
+.cirk {
+  position: absolute;
+  height: 500px;
+  top: 216px;
+  right: 10%;
+  z-index: 20;
+}
+
+/*===========================================
+               APP
+============================================*/
+/* line 198, ../sass/style.scss */
+.app_title {
+  padding-left: 30px;
+}
+/* line 200, ../sass/style.scss */
+.app_title p {
+  margin-top: 25px;
+  padding-left: 80px;
+}
+
+/* line 206, ../sass/style.scss */
+.download {
+  margin-top: 20px;
+  padding-left: 80px;
+}
+/* line 209, ../sass/style.scss */
+.download a {
+  margin-left: 20px;
+}
+/* line 211, ../sass/style.scss */
+.download a img {
+  width: 150px;
+  height: 48px;
+}
+
+/* line 218, ../sass/style.scss */
+.phone {
+  margin-top: 40px;
+}
+/* line 220, ../sass/style.scss */
+.phone img {
+  height: 620px;
+}
+
+/*===========================================
+               AUTHOR
+============================================*/
+/* line 229, ../sass/style.scss */
+.author {
+  margin-top: 40px;
+}
+/* line 231, ../sass/style.scss */
+.author_photo {
+  height: 505px;
+  background: url(../img/AL2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/*===========================================
+               VIDEO
+============================================*/
+/* line 244, ../sass/style.scss */
+.videooff {
+  position: absolute;
+  z-index: 300;
+  background: url(../img/play.png);
+  background-repeat: no-repeat;
+  background-color: #121212;
+  background-position: center center;
+}
+/* line 251, ../sass/style.scss */
+.videooff h5 {
+  position: absolute;
+  bottom: 30%;
+  left: 41%;
+}
+
+/*===========================================
+               FOOTER
+============================================*/
+/* line 262, ../sass/style.scss */
+.contact {
+  margin-top: 80px;
+  padding-bottom: 40px;
+}
+/* line 266, ../sass/style.scss */
+.contact_item p {
+  font-size: 0.8em;
+}
+/* line 269, ../sass/style.scss */
+.contact_item .mail {
+  font-size: 1.2em;
+  color: #69e44d;
+  font-family: bold;
+}
+
+/* line 277, ../sass/style.scss */
+.copy {
+  font-size: 1em;
+  margin-bottom: 70px;
+}
