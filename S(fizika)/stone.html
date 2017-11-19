@@ -7,20 +7,43 @@
     <title>S=...</title>
 </head>
 <body>
+    <div class="desc">
+                <h3>Инструкция по использованию</h3>
+                <p>
+                    Все знаечения вводимые в поля должны быть представлены в СИ. В поля вбивать максимальное количество занчений из условия. Если вы хотите пресчитать значения, то отчисите все поля, перезагрузив страницу.
+                </p>
+    </div>
     <div class="wrapper">
-        <h1>Рассчёт расстояния</h1>
+        <h1>Рассчёт Кинематических значений</h1>
+        <h4>Ускорение</h4><input type="text" id="a">
+        <h4>Тело тормозит?</h4><input type="checkbox" id="c">
         <h4>Начальная скорость</h4><input type="text" id="Vo">
+        <h4>Конечная скорость</h4><input type="text" id="Vk">
         <h4>Время</h4><input type="text" id="t">
-        <br>
-        <button id="start">Рассчитать</button>
-        <hr>
         <h4>Расстояние</h4><input type="text" id="s">
+        <br>
+        <hr>
+        <button id="start">Рассчитать</button>
+        <button><a href="stone.html">Reset</a></button>
     </div>
-    <div class="graf">
-        <h1>тут будет график</h1>
-    </div>
+    
 
 <style>
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    button{
+        width: 200px;
+        height: 40px;
+        margin-left: 30px;
+    }
+
+    hr{
+        margin-top: 20px;
+    }
 
     h1{
         text-transform: uppercase;
@@ -28,10 +51,12 @@
 
     .wrapper{
         border: solid 2px black;
-        display: inline-block;
-        float: left;
+        /* display: inline-block; */
+        /* float: left; */
         padding: 20px;
-        width: 28%;
+        max-width: 600px;
+        margin: auto;
+
     }
 
     #start{
@@ -43,14 +68,12 @@
         width: 100%;
     }
 
-    .graf{
+    .desc{
         padding: 20px;
-        display: inline-block;
-        float: left;
+        width: 80%;
+        margin: auto;
         border: 2px solid black;
-        margin-left: 2%;
-        height: 600px;;
-        width: 63%;
+        margin-bottom: 20px;
 
     }
 
@@ -60,18 +83,58 @@
 <script>
     window.onload = function () {
         
-        const g = 9.832;
-
+        var a = document.getElementById('a');
         var start = document.getElementById('start');
         var Vo = document.getElementById('Vo');
+        var Vk = document.getElementById('Vk');
         var t = document.getElementById('t');
         var s = document.getElementById('s');
 
-        start.onclick = function getS(){
-            S=(Vo.value*t.value)+(g*(t.value*t.value))/2;
-            console.log(S + " Метров");
-            s.value = S + " Метров";
+        var c = document.getElementById('c');
+        
+
+        start.onclick = function Search(){
+
+
+            if (Vo.value !== "" && t.value !== "" && c.checked && a.value !== ""){
+                    let SearchS;
+                    SearchS = (Vo.value*t.value)-(a.value*(t.value*t.value))/2;
+                    console.log(SearchS);
+                    s.value = SearchS;
+
+                    let SearchVk;
+                    SearchVk = (Vo.value*1)-(a.value*t.value);
+                    console.log(SearchVk);
+                    Vk.value = SearchVk;
+
+            } else if (Vo.value !== "" && t.value !== "" && a.value !== ""){
+                    let SearchS;
+                    SearchS = (Vo.value*t.value)+(a.value*(t.value*t.value))/2;
+                    console.log(SearchS);
+                    s.value = SearchS;
+
+                    let SearchVk;
+                    SearchVk = (Vo.value*1) + (a.value*t.value);
+                    console.log(SearchVk);
+                    Vk.value = SearchVk;
+            } else if (Vk.value !== "" && Vo.value !== "" && a.value !== "" && t.value !== ""){
+                    let SearchS;
+                    SearchS = ((Vk.value*Vk.value)-(Vo.value*Vo.value))/(2*a.value);
+                    console.log(SearchS);
+                    s.value = SearchS;
+            } else if (Vk.value !== "" && Vo.value !== "" && t.value !== "" && a.value == ""){
+                    let SearchS;
+                    SearchS = ((Vo.value*1+Vk.value*1)/2)*t.value
+                    console.log(SearchS);
+                    s.value = SearchS;
+
+                    let SearchA;
+                    SearchA = (Vk.value-Vo.value)/t.value
+                    console.log(SearchA);
+                    a.value = SearchA;
+            }
         };
+
 
 };
 </script>
