@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>S=...</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Рассчёт расстояния</h1>
+        <h4>Начальная скорость</h4><input type="text" id="Vo">
+        <h4>Время</h4><input type="text" id="t">
+        <br>
+        <button id="start">Рассчитать</button>
+        <hr>
+        <h4>Расстояние</h4><input type="text" id="s">
+    </div>
+    <div class="graf">
+        <h1>тут будет график</h1>
+    </div>
+
+<style>
+
+    h1{
+        text-transform: uppercase;
+    }
+
+    .wrapper{
+        border: solid 2px black;
+        display: inline-block;
+        float: left;
+        padding: 20px;
+        width: 28%;
+    }
+
+    #start{
+        margin-top: 20px;
+    }
+
+    input{
+        height: 40px;
+        width: 100%;
+    }
+
+    .graf{
+        padding: 20px;
+        display: inline-block;
+        float: left;
+        border: 2px solid black;
+        margin-left: 2%;
+        height: 600px;;
+        width: 63%;
+
+    }
+
+</style>
+
+
+<script>
+    window.onload = function () {
+        
+        const g = 9.832;
+
+        var start = document.getElementById('start');
+        var Vo = document.getElementById('Vo');
+        var t = document.getElementById('t');
+        var s = document.getElementById('s');
+
+        start.onclick = function getS(){
+            S=(Vo.value*t.value)+(g*(t.value*t.value))/2;
+            console.log(S + " Метров");
+            s.value = S + " Метров";
+        };
+
+};
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
