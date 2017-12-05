@@ -1,149 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>S=...</title>
+    <title>Calc</title>
 </head>
+
 <body>
-    <div class="desc">
-                <h3>Инструкция по использованию</h3>
-                <p>
-                    Все знаечения вводимые в поля должны быть представлены в СИ. В поля вбивать максимальное количество занчений из условия. Если вы хотите пресчитать значения, то отчисите все поля, перезагрузив страницу.
-                </p>
+    <div class="container">
+        <div class="calc">
+            <h1>Рассчёт Кинематических значений</h1>
+            <h4>Ускорение (м/с<sup>2</sup>)</h4><input type="text" id="a">
+            <h4>Тело тормозит?</h4><input type="checkbox" id="c">
+            <h4>Начальная скорость (м/с)</h4><input type="text" id="Vo">
+            <h4>Конечная скорость (м/с)</h4><input type="text" id="Vk">
+            <h4>Время (с)</h4><input type="text" id="t">
+            <h4>Расстояние (м)</h4><input type="text" id="s">
+            <br>
+            <hr>
+            <button id="start">Рассчитать</button>
+            <button id="reset"><a href="stone.html">Reset</a></button>
+        </div>
+        <div class="desc">
+            <h3>Инструкция по использованию</h3>
+            <p>
+                Все знаечения вводимые в поля должны быть представлены в СИ. В поля вбивать максимальное количество занчений из условия. Если вы хотите пресчитать значения, то отчисите все поля, перезагрузив страницу.
+            </p>
+        </div>
+        <div class="formul">
+            <h3>Формулы</h3><br>
+        </div>
     </div>
-    <div class="wrapper">
-        <h1>Рассчёт Кинематических значений</h1>
-        <h4>Ускорение</h4><input type="text" id="a">
-        <h4>Тело тормозит?</h4><input type="checkbox" id="c">
-        <h4>Начальная скорость</h4><input type="text" id="Vo">
-        <h4>Конечная скорость</h4><input type="text" id="Vk">
-        <h4>Время</h4><input type="text" id="t">
-        <h4>Расстояние</h4><input type="text" id="s">
-        <br>
-        <hr>
-        <button id="start">Рассчитать</button>
-        <button><a href="stone.html">Reset</a></button>
-    </div>
-    
+    <style>
 
-<style>
+        body{
+        font-family: monospace;
+        font-size: 18px;
+        background: #1eea65;
+        background: -webkit-linear-gradient(top left, #1eea65 0%, #77ff8c 20%, #00f482 40%, #00f260 55%, #00707f 89%, #00032d 100%);
+        background: -o-linear-gradient(top left, #1eea65 0%, #77ff8c 20%, #00f482 40%, #00f260 55%, #00707f 89%, #00032d 100%);
+        background: linear-gradient(to bottom right, #1eea65 0%, #77ff8c 20%, #00f482 40%, #00f260 55%, #00707f 89%, #00032d 100%);
+                }
 
-    a{
-        text-decoration: none;
-        color: black;
-    }
+        .container{
+            padding: 20px;
+            margin: auto;
+        }
 
-    button{
-        width: 200px;
-        height: 40px;
-        margin-left: 30px;
-    }
+        a {
+            text-decoration: none;
+            color: black;
+        }
 
-    hr{
-        margin-top: 20px;
-    }
+        button {
+            width: 200px;
+            height: 40px;
+            margin-left: 30px;
+            background-color: #3EB829;
+            border: none;
+            color: white;
+            text-transform: uppercase;
+            box-shadow: 3px -3px 10px 0px #0000009c;
+        }
+        button>a{
+            color: white;
+        }
 
-    h1{
-        text-transform: uppercase;
-    }
+        button:hover{
+            background-color: #41d827;
+        }
 
-    .wrapper{
-        border: solid 2px black;
-        /* display: inline-block; */
-        /* float: left; */
-        padding: 20px;
-        max-width: 600px;
-        margin: auto;
+        hr {
+            margin-top: 20px;
+        }
 
-    }
+        h1,h4,h3 {
+            text-transform: uppercase;
+        }
 
-    #start{
-        margin-top: 20px;
-    }
+        .calc {
+            background-color: #D4FFCD;
+            border: solid 2px black;
 
-    input{
-        height: 40px;
-        width: 100%;
-    }
+            float: left;
+            padding: 20px;
+            max-width: 45%;
 
-    .desc{
-        padding: 20px;
-        width: 80%;
-        margin: auto;
-        border: 2px solid black;
-        margin-bottom: 20px;
+        }
 
-    }
+        #start {
+            margin-top: 20px;
+        }
 
-</style>
+        input {
+            font: 400 18px Arial;
+            padding-left: 15px;
+            box-sizing: border-box;
+            background-color: #BEF9B4;
+            height: 40px;
+            width: 100%;
+        }
 
-
-<script>
-    window.onload = function () {
-        
-        var a = document.getElementById('a');
-        var start = document.getElementById('start');
-        var Vo = document.getElementById('Vo');
-        var Vk = document.getElementById('Vk');
-        var t = document.getElementById('t');
-        var s = document.getElementById('s');
-
-        var c = document.getElementById('c');
-        
-
-        start.onclick = function Search(){
+        .desc, .formul {
+            background-color: #D4FFCD;
+            padding: 10px 20px;
+            width: 40%;
+            float: left;
+            border: 2px solid black;
+            margin-bottom: 20px;
+            margin-left: 30px;
+        }
 
 
-            if (Vo.value !== "" && t.value !== "" && c.checked && a.value !== ""){
+
+    </style>
+
+
+    <script>
+        window.onload = function() {
+
+            var a = document.getElementById('a');
+            var start = document.getElementById('start');
+            var Vo = document.getElementById('Vo');
+            var Vk = document.getElementById('Vk');
+            var t = document.getElementById('t');
+            var s = document.getElementById('s');
+
+            var c = document.getElementById('c');
+
+
+            start.onclick = function Search() {
+
+
+                if (Vo.value !== "" && t.value !== "" && c.checked && a.value !== "") {
                     let SearchS;
-                    SearchS = (Vo.value*t.value)-(a.value*(t.value*t.value))/2;
+                    SearchS = (Vo.value * t.value) - (a.value * (t.value * t.value)) / 2;
                     console.log(SearchS);
                     s.value = SearchS;
 
                     let SearchVk;
-                    SearchVk = (Vo.value*1)-(a.value*t.value);
+                    SearchVk = (Vo.value * 1) - (a.value * t.value);
                     console.log(SearchVk);
                     Vk.value = SearchVk;
 
-            } else if (Vo.value !== "" && t.value !== "" && a.value !== ""){
+                } else if (Vo.value !== "" && t.value !== "" && a.value !== "") {
                     let SearchS;
-                    SearchS = (Vo.value*t.value)+(a.value*(t.value*t.value))/2;
+                    SearchS = (Vo.value * t.value) + (a.value * (t.value * t.value)) / 2;
                     console.log(SearchS);
                     s.value = SearchS;
 
                     let SearchVk;
-                    SearchVk = (Vo.value*1) + (a.value*t.value);
+                    SearchVk = (Vo.value * 1) + (a.value * t.value);
                     console.log(SearchVk);
                     Vk.value = SearchVk;
-            } else if (Vk.value !== "" && Vo.value !== "" && a.value !== "" && t.value !== ""){
+                } else if (Vk.value !== "" && Vo.value !== "" && a.value !== "" && t.value !== "") {
                     let SearchS;
-                    SearchS = ((Vk.value*Vk.value)-(Vo.value*Vo.value))/(2*a.value);
+                    SearchS = ((Vk.value * Vk.value) - (Vo.value * Vo.value)) / (2 * a.value);
                     console.log(SearchS);
                     s.value = SearchS;
-            } else if (Vk.value !== "" && Vo.value !== "" && t.value !== "" && a.value == ""){
+                } else if (Vk.value !== "" && Vo.value !== "" && t.value !== "" && a.value == "") {
                     let SearchS;
-                    SearchS = ((Vo.value*1+Vk.value*1)/2)*t.value
+                    SearchS = ((Vo.value * 1 + Vk.value * 1) / 2) * t.value
                     console.log(SearchS);
                     s.value = SearchS;
 
                     let SearchA;
-                    SearchA = (Vk.value-Vo.value)/t.value
+                    SearchA = (Vk.value - Vo.value) / t.value
                     console.log(SearchA);
                     a.value = SearchA;
-            }
+                }
+            };
+
+
         };
-
-
-};
-</script>
+    </script>
 </body>
+
 </html>
-
-
-
-
-
-
-
