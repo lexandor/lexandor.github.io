@@ -26,7 +26,7 @@
         <div class="desc">
             <h3>Инструкция по использованию</h3>
             <p>
-                Все знаечения вводимые в поля должны быть представлены в СИ. В поля вбивать максимальное количество занчений из условия. Если вы хотите пресчитать значения, то отчисите все поля, перезагрузив страницу.
+                Все значения вводимые в поля должны быть представлены в СИ. В поля вбивать максимальное количество заначений из условия. Если вы хотите пресчитать значения, то отчистите все поля, перезагрузив страницу или нажав кнопку Reset.
             </p>
         </div>
         <div class="formul">
@@ -34,17 +34,16 @@
         </div>
     </div>
     <style>
+        body {
+            font-family: monospace;
+            font-size: 18px;
+            background: #1eea65;
+            background: -webkit-linear-gradient(top left, #1eea65 0%, #77ff8c 20%, #00f482 40%, #00f260 55%, #00707f 89%, #00032d 100%);
+            background: -o-linear-gradient(top left, #1eea65 0%, #77ff8c 20%, #00f482 40%, #00f260 55%, #00707f 89%, #00032d 100%);
+            background: linear-gradient(to bottom right, #1eea65 0%, #77ff8c 20%, #00f482 40%, #00f260 55%, #00707f 89%, #00032d 100%);
+        }
 
-        body{
-        font-family: monospace;
-        font-size: 18px;
-        background: #1eea65;
-        background: -webkit-linear-gradient(top left, #1eea65 0%, #77ff8c 20%, #00f482 40%, #00f260 55%, #00707f 89%, #00032d 100%);
-        background: -o-linear-gradient(top left, #1eea65 0%, #77ff8c 20%, #00f482 40%, #00f260 55%, #00707f 89%, #00032d 100%);
-        background: linear-gradient(to bottom right, #1eea65 0%, #77ff8c 20%, #00f482 40%, #00f260 55%, #00707f 89%, #00032d 100%);
-                }
-
-        .container{
+        .container {
             padding: 20px;
             margin: auto;
         }
@@ -64,11 +63,12 @@
             text-transform: uppercase;
             box-shadow: 3px -3px 10px 0px #0000009c;
         }
-        button>a{
+
+        button>a {
             color: white;
         }
 
-        button:hover{
+        button:hover {
             background-color: #41d827;
         }
 
@@ -76,14 +76,15 @@
             margin-top: 20px;
         }
 
-        h1,h4,h3 {
+        h1,
+        h4,
+        h3 {
             text-transform: uppercase;
         }
 
         .calc {
             background-color: #D4FFCD;
             border: solid 2px black;
-
             float: left;
             padding: 20px;
             max-width: 45%;
@@ -101,9 +102,22 @@
             background-color: #BEF9B4;
             height: 40px;
             width: 100%;
+            border-bottom: #70FF99;
+            border-right: #70FF99;
         }
 
-        .desc, .formul {
+        input:active,
+        input:hover,
+        input:focus {
+            /*outline: 0;
+            outline-offset: 0;*/
+            outline-color: #00FF49;
+            border-bottom: #00FF49;
+            border-right: #00FF49;
+        }
+
+        .desc,
+        .formul {
             background-color: #D4FFCD;
             padding: 10px 20px;
             width: 40%;
@@ -112,68 +126,149 @@
             margin-bottom: 20px;
             margin-left: 30px;
         }
-
-
-
     </style>
 
 
     <script>
         window.onload = function() {
 
-            var a = document.getElementById('a');
             var start = document.getElementById('start');
+            var res = document.getElementById('reset');
+
             var Vo = document.getElementById('Vo');
             var Vk = document.getElementById('Vk');
             var t = document.getElementById('t');
             var s = document.getElementById('s');
+            var a = document.getElementById('a');
 
             var c = document.getElementById('c');
-
+            var formula = document.getElementById('formul');
 
             start.onclick = function Search() {
+                console.log('start');
+
+                if (c.checked) {
+                    a.value = -a.value
+                };
+                if (Vo.value * 1 < Vk.value * 1) {
+                    c.checked
+                };
+
+                while (a.value == "" || Vo.value == "" || Vk.valie == "" || t.value == "" || s.value == "") {
 
 
-                if (Vo.value !== "" && t.value !== "" && c.checked && a.value !== "") {
-                    let SearchS;
-                    SearchS = (Vo.value * t.value) - (a.value * (t.value * t.value)) / 2;
-                    console.log(SearchS);
-                    s.value = SearchS;
 
-                    let SearchVk;
-                    SearchVk = (Vo.value * 1) - (a.value * t.value);
-                    console.log(SearchVk);
-                    Vk.value = SearchVk;
+                    var SearchS = function(a, Vo, Vk, s, t) {
+                        console.log("S")
+                        let SearchS;
+                        if (Vo.value != "" && t.value != "" && a.value != "") {
+                            SearchS = (Vo.value * t.value) + (a.value * (t.value * t.value))
+                        } else
+                        if (Vk.value != "" && Vo.value != "" && a.value != "") {
+                            SearchS = ((Vk.value * Vk.value) - (Vo.value * Vo.value)) / (2 * a.value)
+                        } else
+                        if (Vk.value != "" && Vo.value != "" && t.value != "") {
+                            SearchS = (((Vo.value * 1) + (Vk.value * 1)) / 2) * t.value;
+                        };
 
-                } else if (Vo.value !== "" && t.value !== "" && a.value !== "") {
-                    let SearchS;
-                    SearchS = (Vo.value * t.value) + (a.value * (t.value * t.value)) / 2;
-                    console.log(SearchS);
-                    s.value = SearchS;
+                        if (SearchS != undefined || NaN) {
+                            console.log(SearchS);
+                            s.value = SearchS;
+                        };
+                    };
 
-                    let SearchVk;
-                    SearchVk = (Vo.value * 1) + (a.value * t.value);
-                    console.log(SearchVk);
-                    Vk.value = SearchVk;
-                } else if (Vk.value !== "" && Vo.value !== "" && a.value !== "" && t.value !== "") {
-                    let SearchS;
-                    SearchS = ((Vk.value * Vk.value) - (Vo.value * Vo.value)) / (2 * a.value);
-                    console.log(SearchS);
-                    s.value = SearchS;
-                } else if (Vk.value !== "" && Vo.value !== "" && t.value !== "" && a.value == "") {
-                    let SearchS;
-                    SearchS = ((Vo.value * 1 + Vk.value * 1) / 2) * t.value
-                    console.log(SearchS);
-                    s.value = SearchS;
+                    var SearchA = function(a, Vo, Vk, s, t) {
+                        console.log("A")
+                        let SearchA;
+                        if (Vk.value != "" && Vo.value != "" && t.value != "") {
+                            SearchA = ((Vk.value * 1) - (Vo.value * 1)) / t.value;
+                        } else
+                        if (Vo.value != "" && t.value != "" && s.value != "") {
+                            SearchA = (2 * ((s.value * 1) - (t.value * Vo.value))) / (t.value * t.value);
+                        } else
+                        if (Vk.value != "" && Vo.value != "" && s.value != "") {
+                            SearchA = ((Vk.value * Vk.value) - (Vo.value * Vo.value)) / (2 * s.value);
+                        };
+                        if (SearchA != undefined || NaN) {
+                            console.log(SearchA);
+                            a.value = SearchA;
+                        };
+                    };
 
-                    let SearchA;
-                    SearchA = (Vk.value - Vo.value) / t.value
-                    console.log(SearchA);
-                    a.value = SearchA;
-                }
+                    var SearchT = function(a, Vo, Vk, s, t) {
+                        console.log("T")
+                        let SearchT;
+                        if (Vo.value != "" && Vk.value != "" && s.value != "") {
+                            SearchT = (2 * s.value) / ((Vo.value * 1) + (Vk.value * 1));
+                        } else
+                        if (Vo.value != "" && Vk.value != "" && a.value != "") {
+                            SearchT = ((Vk.value * 1) - (Vo.value * 1)) / a.value;
+                        } else
+                        if (Vo.value == "0" && a.value != "" && s.value != "") {
+                            SearchT = Math.sqrt((2 * s.value) / a.value);
+                        };
+                        if (SearchT != undefined || NaN) {
+                            console.log(SearchT);
+                            t.value = SearchT;
+                        };
+                    };
+
+                    var SearchVk = function(a, Vo, Vk, s, t) {
+                        console.log("Vk")
+                        let SearchVk;
+                        if (Vo.value != "" && a.value != "" && t.value != "") {
+                            SearchVk = (Vo.value * 1) + (a.value * t.value);
+                        };
+                        if (SearchVk != undefined || NaN) {
+                            console.log(SearchVk);
+                            Vk.value = SearchVk;
+                        };
+                    };
+
+                    var SearchVo = function(a, Vo, Vk, s, t) {
+                        console.log("Vo")
+                        let SearchVo;
+                        if (t.value != "" && a.value != "" && s.value != "") {
+                            SearchVo = (s.value / t.value) - (0.5 * a.value * t.value);
+                        } else
+                        if (t.value != "" && Vk.value != "" && s.value != "") {
+                            SearchVo = (s.value / t.value) - (Vk.value * 1);
+                        } else
+                        if (Vk.value != "" && t.value != "" && a.value != "") {
+                            SearchVo = (Vk.value * 1) - (a.value * t.value);
+                        };
+                        if (SearchVo != undefined || NaN) {
+                            console.log(SearchVo);
+                            Vo.value = SearchVo;
+                        };
+                    };
+
+                    if (s.value == "") {
+                        SearchS(a, Vo, Vk, s, t, formula);
+                    };
+                    if (a.value == "") {
+                        SearchA(a, Vo, Vk, s, t);
+                    };
+                    if (Vo.value == "") {
+                        SearchVo(a, Vo, Vk, s, t);
+                    };
+                    if (Vk.value == "") {
+                        SearchVk(a, Vo, Vk, s, t);
+                    };
+                    if (t.value == "") {
+                        SearchT(a, Vo, Vk, s, t);
+                    };
+                };
+
+                reset.onclick = function() {
+                    console.log("Clear!")
+                    a.value = "";
+                    Vk.value = "";
+                    Vo.value = "";
+                    s.value = "";
+                    t.value = "";
+                };
             };
-
-
         };
     </script>
 </body>
