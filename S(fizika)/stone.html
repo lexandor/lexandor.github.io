@@ -34,7 +34,7 @@
             <div id="formula"></div>
         </div>
     </div>
-    <footer>&copy;PLEX-team -- Ometov Alexaner</footer>
+    <footer>&copy;PLEX-team -- Ometov Alexander</footer>
 
     <style>
 
@@ -404,7 +404,14 @@
                     Vo.value = "";
                     s.value = "";
                     t.value = "";
+                    Remove();
                 };
+
+                function Remove(){
+                    var resFormula = document.getElementById('formula')
+                    resFormula.parentNode.removeChild(formul);
+                    return false;
+                }
             };
         };
     </script>
