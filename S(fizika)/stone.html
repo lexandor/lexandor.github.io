@@ -161,7 +161,7 @@
         .formul {
             display: flex;
             flex-wrap: nowrap;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
         .formul div{
@@ -173,6 +173,41 @@
             padding-top: 14px;
             padding-right: 10px;
             padding-left: 10px;
+        }
+
+        @media screen and (max-width: 768px){
+            .container, .calc, .desc, .formulWrapper{
+                float: none;
+                margin: 20px 0px;
+                max-width: 90%;
+                width: 90%;
+            }
+        }
+
+        @media screen and (max-width: 425px){
+            button{
+                margin-bottom: 15px;
+                width: 80%;
+            }
+        }
+
+        @media screen and (max-width: 320px){
+            body{
+                background: linear-gradient(to bottom right, #1eea65 0%, #1eea65 100%);
+            }
+            .container, .calc, .desc, .formulWrapper{
+                max-width: 90%;
+                width: 90%;
+            }
+            .container{
+                margin: 0px;
+                padding: 0px;
+                padding-left: 10px;
+            }
+
+            h1{
+                font-size: 1.5em;
+            }
         }
     </style>
 
