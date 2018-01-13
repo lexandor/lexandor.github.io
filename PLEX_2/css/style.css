@@ -1,0 +1,387 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*===========================================
+				HELPERS
+============================================*/
+/*===========================================
+				FONTS
+============================================*/
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat-Light.ttf") format("truetype"), url("../fonts/Montserrat-Light.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'RalewayExBold';
+  src: url("../fonts/Raleway-ExtraBold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.woff2") format("woff2"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'RalewayMed';
+  src: url("../fonts/Raleway-Medium.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Raleway-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway-Medium.woff") format("woff"), url("../fonts/Raleway-Medium.ttf") format("truetype"), url("../fonts/Raleway-Medium.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'RalewaySem';
+  src: url("../fonts/Raleway-SemiBold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Raleway-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-SemiBold.woff2") format("woff2"), url("../fonts/Raleway-SemiBold.woff") format("woff"), url("../fonts/Raleway-SemiBold.ttf") format("truetype"), url("../fonts/Raleway-SemiBold.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+/*===========================================
+				TEXT
+============================================*/
+/* line 62, ../sass/style.scss */
+body {
+  font-family: 'Montserrat';
+  font-size: 10px;
+}
+
+/* line 67, ../sass/style.scss */
+h1 {
+  font-family: 'RalewayExBold';
+  font-size: 5.2rem;
+  margin: 1rem 0;
+}
+
+/* line 73, ../sass/style.scss */
+h2 {
+  font-family: 'RalewaySem';
+  font-size: 2rem;
+  color: #555555;
+}
+
+/* line 79, ../sass/style.scss */
+small {
+  font-family: 'Montserrat';
+  font-size: 1rem;
+  color: #8c8c8c;
+}
+
+/*===========================================
+				BUTTONS
+============================================*/
+/* line 88, ../sass/style.scss */
+.button {
+  background-color: #998675;
+  border: none;
+  border-bottom: 3px solid #827163;
+  border-radius: 5px;
+  padding: 1.2rem 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'RalewayExBold';
+  font-size: 0.8rem;
+}
+/* line 98, ../sass/style.scss */
+.button:focus {
+  outline: none;
+}
+/* line 101, ../sass/style.scss */
+.button:hover {
+  background-color: #362f2d;
+  border-bottom: 3px solid #1b1818;
+}
+
+/* line 107, ../sass/style.scss */
+.btn-wrapper {
+  padding: 2rem 0rem;
+}
+
+/*===========================================
+				HEADER
+============================================*/
+/* line 114, ../sass/style.scss */
+.header_bg {
+  filter: brightness(40%);
+}
+/* line 117, ../sass/style.scss */
+.header-title {
+  text-align: center;
+  margin: 10rem auto 0px;
+  color: #ffffff;
+}
+/* line 121, ../sass/style.scss */
+.header-title span {
+  font-family: 'RalewayMed';
+  font-size: 2.6rem;
+}
+/* line 125, ../sass/style.scss */
+.header-title p {
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+/* line 135, ../sass/style.scss */
+.fotorama__dot {
+  border: 1px solid #fff;
+  width: 8px;
+  height: 8px;
+}
+/* line 140, ../sass/style.scss */
+.fotorama__nav-wrap {
+  position: absolute;
+  bottom: 0;
+}
+
+/*===========================================
+				NAVBAR
+============================================*/
+/* line 150, ../sass/style.scss */
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* line 156, ../sass/style.scss */
+.nav-link {
+  color: #fff;
+  font-size: 1.1rem;
+}
+/* line 159, ../sass/style.scss */
+.nav-link:hover {
+  color: #d4a77d;
+}
+
+/* line 164, ../sass/style.scss */
+.navbar {
+  width: 100%;
+}
+/* line 167, ../sass/style.scss */
+.navbar-brand img {
+  height: 70px;
+}
+
+/*===========================================
+				JOBS
+============================================*/
+/* line 177, ../sass/style.scss */
+.L {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 4px;
+}
+/* line 183, ../sass/style.scss */
+.L-line {
+  content: "";
+  height: 4px;
+  width: 35%;
+  background-color: #f7f5f2;
+  margin: auto;
+}
+
+/* line 192, ../sass/style.scss */
+.job {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+/* line 195, ../sass/style.scss */
+.job-card {
+  height: 16rem;
+  position: relative;
+  text-align: center;
+}
+/* line 199, ../sass/style.scss */
+.job-card-title {
+  font-size: 1.6rem;
+  margin: 1.2rem 0rem;
+  font-weight: 800;
+}
+/* line 204, ../sass/style.scss */
+.job-card-content {
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+/* line 215, ../sass/style.scss */
+.icon {
+  text-align: center;
+}
+
+/*===========================================
+				SCREEN
+============================================*/
+/* line 222, ../sass/style.scss */
+.screen {
+  margin-top: 3rem;
+  background-color: #fbfaf8;
+}
+/* line 225, ../sass/style.scss */
+.screen-title {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 0.8rem;
+}
+/* line 229, ../sass/style.scss */
+.screen-title-big {
+  margin-bottom: 2rem;
+}
+/* line 232, ../sass/style.scss */
+.screen-title-small {
+  line-height: 2.2rem;
+}
+/* line 237, ../sass/style.scss */
+.screen-browser {
+  position: relative;
+  min-height: 30rem;
+}
+/* line 240, ../sass/style.scss */
+.screen-browser-img {
+  position: absolute;
+}
+/* line 242, ../sass/style.scss */
+.screen-browser-img_left {
+  z-index: 10;
+  left: 0;
+}
+/* line 246, ../sass/style.scss */
+.screen-browser-img_center {
+  z-index: 100;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+/* line 251, ../sass/style.scss */
+.screen-browser-img_right {
+  z-index: 10;
+  right: 0;
+}
+
+/*===========================================
+				BUY LINE
+============================================*/
+/* line 263, ../sass/style.scss */
+.buyline {
+  background: #211b19;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #211b19 0%, #4e3427 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #211b19 0%, #4e3427 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #211b19 0%, #4e3427 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  padding-top: 1rem;
+}
+/* line 269, ../sass/style.scss */
+.buyline-title {
+  color: #fff;
+  padding: 1rem 0rem;
+  font-family: 'RalewayMed';
+}
+/* line 273, ../sass/style.scss */
+.buyline-title-big {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  color: #fff;
+}
+/* line 277, ../sass/style.scss */
+.buyline-title-big strong {
+  color: #d4a77d;
+}
+/* line 281, ../sass/style.scss */
+.buyline-title-small {
+  font-size: 1.5rem;
+}
+/* line 285, ../sass/style.scss */
+.buyline-button {
+  width: 100%;
+}
+
+/*===========================================
+				######
+============================================*/
+/*===========================================
+				######
+============================================*/
+/*===========================================
+				######
+============================================*/
+/*===========================================
+				######
+============================================*/
+/*===========================================
+				######
+============================================*/
+/*===========================================
+				######
+============================================*/
+/*===========================================
+				######
+============================================*/
