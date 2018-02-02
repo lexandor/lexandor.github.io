@@ -1,0 +1,298 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*===========================================
+				HELPERS
+============================================*/
+/* line 20, ../sass/style.scss */
+body {
+  background-color: #f1f1f1;
+  line-height: 3rem;
+  font-size: 2rem;
+  font-family: Montserrat, sans-serif;
+}
+
+/* line 27, ../sass/style.scss */
+html {
+  font-size: 10px;
+}
+
+/* line 31, ../sass/style.scss */
+.main {
+  margin-top: 3rem;
+}
+
+/* line 35, ../sass/style.scss */
+.calc, .info, .formulWrapper {
+  border: 2px solid black;
+}
+/* line 37, ../sass/style.scss */
+.calc_content, .info_content, .formulWrapper_content {
+  padding: 2.5rem 2.2rem;
+  background-color: #e8e8e8;
+}
+
+/*===========================================
+				FONTS
+============================================*/
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+/*===========================================
+				TEXT
+============================================*/
+/* line 60, ../sass/style.scss */
+p, h4, button {
+  font-size: 2rem;
+}
+
+/* line 64, ../sass/style.scss */
+h1, h3 {
+  font-size: 3.2rem;
+}
+
+/* line 68, ../sass/style.scss */
+h4 {
+  margin: 1.4rem 0rem;
+}
+
+/* line 72, ../sass/style.scss */
+.title {
+  background-color: #2e302f;
+  color: #fcfcfc;
+  position: relative;
+  padding: 2.5rem 2.2rem;
+  max-height: 13rem;
+  line-height: 4rem;
+}
+
+/* line 81, ../sass/style.scss */
+sub, sup {
+  font-size: 1.5rem;
+}
+
+/* line 85, ../sass/style.scss */
+i {
+  font-size: 1.5rem;
+}
+
+/*===========================================
+				BUTTONS
+============================================*/
+/* line 92, ../sass/style.scss */
+button {
+  background-color: #2e302f;
+  color: #fcfcfc;
+  border: none;
+  padding: 1rem 1.2rem;
+  margin-top: 2rem;
+}
+
+/* line 100, ../sass/style.scss */
+#start {
+  float: left;
+}
+
+/* line 104, ../sass/style.scss */
+#reset {
+  float: right;
+}
+
+/*===========================================
+				CALC
+============================================*/
+/* line 111, ../sass/style.scss */
+.calc {
+  margin-bottom: 3rem;
+}
+/* line 113, ../sass/style.scss */
+.calc_content {
+  padding-bottom: 9rem;
+}
+
+/* line 118, ../sass/style.scss */
+input {
+  height: 4rem;
+  width: 100%;
+  padding-left: 15px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #d6d6d6;
+}
+/* line 126, ../sass/style.scss */
+input:active, input :hover, input :focus, input :visited {
+  /*outline: 0;
+  outline-offset: 0;*/
+  outline-color: #00FF49;
+}
+
+/* line 135, ../sass/style.scss */
+.line {
+  content: "";
+  width: 100%;
+  height: 1.5rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 500;
+  font-size: 2rem;
+  background: #1eea65 no-repeat;
+  background: -moz-linear-gradient(-45deg, #1eea65 0%, #01f482 29%, #4d8652 69%, #003050 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #1eea65 0%, #01f482 29%, #4d8652 69%, #003050 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #1eea65 0%, #01f482 29%, #4d8652 69%, #003050 100%);
+}
+
+/*===========================================
+				INSTRUCTION
+============================================*/
+/*===========================================
+				FORMUL
+============================================*/
+/* line 162, ../sass/style.scss */
+.formul {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+}
+/* line 166, ../sass/style.scss */
+.formul div {
+  vertical-align: middle;
+  text-align: center;
+}
+/* line 170, ../sass/style.scss */
+.formulWrapper {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* line 176, ../sass/style.scss */
+.centerv {
+  padding-top: 14px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/*===========================================
+				FOOTER
+============================================*/
+/* line 187, ../sass/style.scss */
+footer {
+  background-color: #2e302f;
+  color: #fcfcfc;
+  padding: 2.5rem 3.5rem;
+}
+
+/* line 194, ../sass/style.scss */
+.logo img {
+  height: 9rem;
+}
+
+/* line 199, ../sass/style.scss */
+.copy {
+  margin-bottom: 1rem;
+}
+
+/*===========================================
+				@MEDIA
+============================================*/
+@media screen and (max-width: 768px) {
+  /* line 207, ../sass/style.scss */
+  .calc_content {
+    padding-bottom: 16rem;
+  }
+}
+@media screen and (max-width: 426px) {
+  /* line 213, ../sass/style.scss */
+  h3 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  /* line 219, ../sass/style.scss */
+  h3 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 321px) {
+  /* line 225, ../sass/style.scss */
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  /* line 228, ../sass/style.scss */
+  h1 {
+    font-size: 2.5rem;
+  }
+}
