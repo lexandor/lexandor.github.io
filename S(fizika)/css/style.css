@@ -197,7 +197,7 @@ input:active, input :hover, input :focus, input :visited {
 }
 
 /* line 135, ../sass/style.scss */
-.line {
+.liner {
   content: "";
   width: 100%;
   height: 1.5rem;
@@ -244,22 +244,30 @@ input:active, input :hover, input :focus, input :visited {
   padding-left: 10px;
 }
 
+/* line 182, ../sass/style.scss */
+.line {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #464646;
+}
+
 /*===========================================
 				FOOTER
 ============================================*/
-/* line 187, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 footer {
   background-color: #2e302f;
   color: #fcfcfc;
   padding: 2.5rem 3.5rem;
 }
 
-/* line 194, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 .logo img {
   height: 9rem;
 }
 
-/* line 199, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
 .copy {
   margin-bottom: 1rem;
 }
@@ -268,30 +276,30 @@ footer {
 				@MEDIA
 ============================================*/
 @media screen and (max-width: 768px) {
-  /* line 207, ../sass/style.scss */
+  /* line 213, ../sass/style.scss */
   .calc_content {
     padding-bottom: 16rem;
   }
 }
 @media screen and (max-width: 426px) {
-  /* line 213, ../sass/style.scss */
+  /* line 219, ../sass/style.scss */
   h3 {
     font-size: 3rem;
   }
 }
 @media screen and (max-width: 376px) {
-  /* line 219, ../sass/style.scss */
+  /* line 225, ../sass/style.scss */
   h3 {
     font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 321px) {
-  /* line 225, ../sass/style.scss */
+  /* line 231, ../sass/style.scss */
   h3 {
     font-size: 2.2rem;
   }
 
-  /* line 228, ../sass/style.scss */
+  /* line 234, ../sass/style.scss */
   h1 {
     font-size: 2.5rem;
   }
