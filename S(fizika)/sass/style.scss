@@ -1,0 +1,262 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+/*===========================================
+				HELPERS
+============================================*/
+
+$bg_body: #f1f1f1;
+$dark: #2e302f;
+$bg: #e8e8e8;
+$font: #464646;
+$font_light: #fcfcfc;
+// $input: #dcdcdc;
+$input: #d6d6d6;
+
+._green{
+	background: #1eea65 no-repeat;
+	background: -moz-linear-gradient(-45deg, #1eea65 0%, #01f482 29%, #4d8652 69%, #003050 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #1eea65 0%,#01f482 29%,#4d8652 69%,#003050 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #1eea65 0%,#01f482 29%,#4d8652 69%,#003050 100%);
+}
+._red{
+	background: #ed0000; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #ed0000 1%, #ed3b00 32%, #ed9200 73%, #ed9200 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #ed0000 1%,#ed3b00 32%,#ed9200 73%,#ed9200 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #ed0000 1%,#ed3b00 32%,#ed9200 73%,#ed9200 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+._magenta{
+	background: #8e1c77; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #8e1c77 2%, #af238a 33%, #f727f3 72%, #ff00f6 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #8e1c77 2%,#af238a 33%,#f727f3 72%,#ff00f6 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #8e1c77 2%,#af238a 33%,#f727f3 72%,#ff00f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+body{
+	background-color: $bg_body;
+	line-height: 3rem;
+	font-size: 2rem;
+	font-family: Montserrat, sans-serif;
+}
+
+html{
+	font-size: 10px;
+}
+
+.main{
+	margin-top: 3rem;
+}
+
+.calc,.info,.formulWrapper{
+	border: 2px solid black;
+	&_content,{
+		padding: 2.5rem 2.2rem;
+		background-color: $bg;
+	}
+}
+
+/*===========================================
+				FONTS
+============================================*/
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Regular.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/Montserrat-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/Montserrat-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('../fonts/Montserrat-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/Montserrat-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+/*===========================================
+				TEXT
+============================================*/
+
+p, h4, button{
+	font-size: 2rem;
+}
+
+h1,h3{
+	font-size: 3.2rem;
+}
+
+h4{
+	margin: 1.4rem 0rem;
+}
+
+.title{
+	background-color: $dark;
+	color: $font_light;
+	position: relative;
+	padding: 2.5rem 2.2rem;
+	max-height: 13rem;
+	line-height: 4rem;
+}
+
+sub,sup{
+	font-size: 1.5rem;
+}
+
+i{
+	font-size: 1.5rem;
+}
+/*===========================================
+				BUTTONS
+============================================*/
+
+button{
+	background-color: $dark;
+	color: $font_light;
+	border: none;
+	padding: 1rem 1.2rem;
+	margin-top: 2rem;
+}
+
+#start{
+	float: left;
+}
+
+#reset{
+	float: right;
+}
+/*===========================================
+				CALC
+============================================*/
+
+.calc{
+	margin-bottom: 3rem;
+	&_content{
+		padding-bottom: 9rem;
+	}
+}
+
+input{
+	height: 4rem;
+	width: 100%;
+	padding-left: 15px;
+    box-sizing: border-box;
+    // border: 1px solid black;
+    border: none;
+    background-color: $input;
+	&:active,:hover,:focus,:visited{
+	    /*outline: 0;
+	    outline-offset: 0;*/
+	    outline-color: #00FF49;
+	    // border-bottom: #00FF49;
+	    // border-right: #00FF49;
+	}
+}
+
+.liner{
+	content: "";
+	width: 100%;
+	height: 1.5rem;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 500;
+	font-size: 2rem;
+}
+
+
+
+/*===========================================
+				INSTRUCTION
+============================================*/
+/*===========================================
+				FORMUL
+============================================*/
+
+.formul{
+	display: flex;
+	flex-wrap: nowrap;
+	margin-bottom: 20px;
+	div{
+		vertical-align: middle;
+		text-align: center;
+	}
+	&Wrapper{
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+	}
+}
+
+.centerv{
+    padding-top: 14px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.line {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $font;
+}
+
+/*===========================================
+				FOOTER
+============================================*/
+
+footer,header{
+	background-color: $dark;
+	color: $font_light;
+	padding: 2.5rem 3.5rem;
+}
+
+.logo{
+	img{
+		height: 9rem;
+	}
+}
+
+.copy{
+	margin-bottom: 1rem;
+}
+
+/*===========================================
+				INDEX
+============================================*/
+
+main{
+	padding: 3rem 0rem;
+}
+
+.card{
+	
+}
+/*===========================================
+				@MEDIA
+============================================*/
+
+@media screen and (max-width: 768px) {
+	.calc_content{
+		padding-bottom: 16rem;
+	}
+}
+
+@media screen and (max-width: 426px) {
+	h3{
+		font-size: 3rem;
+	}
+}
+
+@media screen and (max-width: 376px) {
+	h3{
+		font-size: 2.5rem;
+	}
+}
+
+@media screen and (max-width: 321px) {
+	h3{
+		font-size: 2.2rem;
+	}
+	h1{
+		font-size: 2.5rem;
+	}	
+}
+

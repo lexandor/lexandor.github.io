@@ -9,7 +9,7 @@ window.onload = function() {
             var s = document.getElementById('s');
             var a = document.getElementById('a');
 
-            var c = document.getElementById('c');
+            var c = document.getElementById('check');
             var formula = document.getElementById('formula');
 
 

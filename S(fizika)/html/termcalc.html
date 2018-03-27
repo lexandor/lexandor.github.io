@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+	<div class="container">
+	<div class="main row">
+        <div class="calculator col-md-5">
+			<div class="calc">
+	        	<div class="title">
+	        		<h1>Термодинамический Калькулятор</h1>
+	        		<div class="liner _red">.</div>
+	            </div>
+				
+				<div class="calc_content">
+		            <h4>Теплота (Дж)</h4>
+		            	<input type="text" id="Q">
+		            <h4>Вид теплообмена</h4>
+		            	<div class="row">
+			            	<input type="radio" name="rad" id="nagr" checked="checked">
+			            	<input type="radio" name="rad" id="plav">
+			            	<input type="radio" name="rad" id="par">
+		            	</div>
+		            <h4 class="ch4">Удельная теплота нагрева (Дж/кг*<sup>o</sup>С)</h4>
+		            	<input type="text" id="c" class="c">
+		            <h4 class="hh4">Удельная теплота плавления (Дж/кг)</h4>
+		            	<input type="text" id="h" class="h">
+		            <h4 class="rh4">Удельная теплота парообразования (Дж/кг)</h4>
+		            	<input type="text" id="r" class="r">
+		            <h4>Время (с)</h4>
+		            	<input type="text" id="t">
+		            <h4>Начальная температура (<sup>o</sup>С)</h4>
+		            	<input type="text" id="To">
+		            <h4>Конечная температура (<sup>o</sup>С)</h4>
+		            	<input type="text" id="Tk">
+		            <br>
+		            <button id="start" class="col-sm-5 col-xs-12">Рассчитать</button>
+		            <button id="reset" class="col-sm-5 col-xs-12">Очистить</button>
+				</div>
+			</div>
+        </div>
+
+        <div class="sidebar col-md-7">
+
+	        <div class="info">
+	        	<div class="title">
+	            	<h3>Инструкция<br> по использованию</h3>
+	            </div>
+	            <div class="info_content">
+		            <p>
+		                Все значения вводимые в поля должны быть представлены в СИ. В поля вбивать максимальное количество заначений из условия. Если вы хотите пересчитать значения, то отчистите все поля, перезагрузив страницу или нажав кнопку "Очистить".
+		            </p>
+	            </div>
+	        </div>
+
+	        <div class="formulWrapper">
+	        	<div class="title">
+	            	<h3>Формулы</h3>
+				</div>
+	            <div class="formulWrapper_content">
+	            	<div id="formula"></div>
+	            </div> 
+	        </div>
+
+        </div>
+    </div>
+    </div>
+    <footer>
+    <div class="container-fluide">
+    	<div class="row">
+    		<div class="logo col-md-2"><img src="../img/logo.png" alt="логотип"></div>
+    		<div class="copy col-lg-3 col-md-offset-0 col-md-3 col-md-offset-1">&copy;PLEX-team<br>&copy;Ometov Alexander</div>
+    		<div class="contacts col-lg-offset-4 col-md-offset-3sm col-md-3">
+    			<h5>Contacts:</h5>
+    			<p>
+    			<i>ometov.sasha@mail.ru<br>
+    			plex-team@mail.ru</i>
+    			</p>
+    		</div>
+    	</div>
+    </div>
+    </footer>
+
+
+
+
+
+
+
+<script type="text/javascript" src="../js/term_script.js"></script>
+</body>
+</html>

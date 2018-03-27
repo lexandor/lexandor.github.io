@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -71,6 +71,40 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 				HELPERS
 ============================================*/
 /* line 20, ../sass/style.scss */
+._green {
+  background: #1eea65 no-repeat;
+  background: -moz-linear-gradient(-45deg, #1eea65 0%, #01f482 29%, #4d8652 69%, #003050 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #1eea65 0%, #01f482 29%, #4d8652 69%, #003050 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #1eea65 0%, #01f482 29%, #4d8652 69%, #003050 100%);
+}
+
+/* line 26, ../sass/style.scss */
+._red {
+  background: #ed0000;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #ed0000 1%, #ed3b00 32%, #ed9200 73%, #ed9200 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #ed0000 1%, #ed3b00 32%, #ed9200 73%, #ed9200 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #ed0000 1%, #ed3b00 32%, #ed9200 73%, #ed9200 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+/* line 32, ../sass/style.scss */
+._magenta {
+  background: #8e1c77;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #8e1c77 2%, #af238a 33%, #f727f3 72%, #ff00f6 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #8e1c77 2%, #af238a 33%, #f727f3 72%, #ff00f6 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #8e1c77 2%, #af238a 33%, #f727f3 72%, #ff00f6 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+/* line 39, ../sass/style.scss */
 body {
   background-color: #f1f1f1;
   line-height: 3rem;
@@ -78,21 +112,21 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
-/* line 27, ../sass/style.scss */
+/* line 46, ../sass/style.scss */
 html {
   font-size: 10px;
 }
 
-/* line 31, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 .main {
   margin-top: 3rem;
 }
 
-/* line 35, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 .calc, .info, .formulWrapper {
   border: 2px solid black;
 }
-/* line 37, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 .calc_content, .info_content, .formulWrapper_content {
   padding: 2.5rem 2.2rem;
   background-color: #e8e8e8;
@@ -111,22 +145,22 @@ html {
 /*===========================================
 				TEXT
 ============================================*/
-/* line 60, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 p, h4, button {
   font-size: 2rem;
 }
 
-/* line 64, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 h1, h3 {
   font-size: 3.2rem;
 }
 
-/* line 68, ../sass/style.scss */
+/* line 87, ../sass/style.scss */
 h4 {
   margin: 1.4rem 0rem;
 }
 
-/* line 72, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 .title {
   background-color: #2e302f;
   color: #fcfcfc;
@@ -136,12 +170,12 @@ h4 {
   line-height: 4rem;
 }
 
-/* line 81, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
 sub, sup {
   font-size: 1.5rem;
 }
 
-/* line 85, ../sass/style.scss */
+/* line 104, ../sass/style.scss */
 i {
   font-size: 1.5rem;
 }
@@ -149,7 +183,7 @@ i {
 /*===========================================
 				BUTTONS
 ============================================*/
-/* line 92, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 button {
   background-color: #2e302f;
   color: #fcfcfc;
@@ -158,12 +192,12 @@ button {
   margin-top: 2rem;
 }
 
-/* line 100, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 #start {
   float: left;
 }
 
-/* line 104, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 #reset {
   float: right;
 }
@@ -171,16 +205,16 @@ button {
 /*===========================================
 				CALC
 ============================================*/
-/* line 111, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 .calc {
   margin-bottom: 3rem;
 }
-/* line 113, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 .calc_content {
   padding-bottom: 9rem;
 }
 
-/* line 118, ../sass/style.scss */
+/* line 137, ../sass/style.scss */
 input {
   height: 4rem;
   width: 100%;
@@ -189,14 +223,14 @@ input {
   border: none;
   background-color: #d6d6d6;
 }
-/* line 126, ../sass/style.scss */
+/* line 145, ../sass/style.scss */
 input:active, input :hover, input :focus, input :visited {
   /*outline: 0;
   outline-offset: 0;*/
   outline-color: #00FF49;
 }
 
-/* line 135, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 .liner {
   content: "";
   width: 100%;
@@ -206,12 +240,6 @@ input:active, input :hover, input :focus, input :visited {
   bottom: 0;
   z-index: 500;
   font-size: 2rem;
-  background: #1eea65 no-repeat;
-  background: -moz-linear-gradient(-45deg, #1eea65 0%, #01f482 29%, #4d8652 69%, #003050 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #1eea65 0%, #01f482 29%, #4d8652 69%, #003050 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #1eea65 0%, #01f482 29%, #4d8652 69%, #003050 100%);
 }
 
 /*===========================================
@@ -220,31 +248,31 @@ input:active, input :hover, input :focus, input :visited {
 /*===========================================
 				FORMUL
 ============================================*/
-/* line 162, ../sass/style.scss */
+/* line 174, ../sass/style.scss */
 .formul {
   display: flex;
   flex-wrap: nowrap;
   margin-bottom: 20px;
 }
-/* line 166, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 .formul div {
   vertical-align: middle;
   text-align: center;
 }
-/* line 170, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 .formulWrapper {
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
 
-/* line 176, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 .centerv {
   padding-top: 14px;
   padding-right: 10px;
   padding-left: 10px;
 }
 
-/* line 182, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 .line {
   content: "";
   width: 100%;
@@ -255,51 +283,59 @@ input:active, input :hover, input :focus, input :visited {
 /*===========================================
 				FOOTER
 ============================================*/
-/* line 193, ../sass/style.scss */
-footer {
+/* line 205, ../sass/style.scss */
+footer, header {
   background-color: #2e302f;
   color: #fcfcfc;
   padding: 2.5rem 3.5rem;
 }
 
-/* line 200, ../sass/style.scss */
+/* line 212, ../sass/style.scss */
 .logo img {
   height: 9rem;
 }
 
-/* line 205, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 .copy {
   margin-bottom: 1rem;
+}
+
+/*===========================================
+				INDEX
+============================================*/
+/* line 225, ../sass/style.scss */
+main {
+  padding: 3rem 0rem;
 }
 
 /*===========================================
 				@MEDIA
 ============================================*/
 @media screen and (max-width: 768px) {
-  /* line 213, ../sass/style.scss */
+  /* line 237, ../sass/style.scss */
   .calc_content {
     padding-bottom: 16rem;
   }
 }
 @media screen and (max-width: 426px) {
-  /* line 219, ../sass/style.scss */
+  /* line 243, ../sass/style.scss */
   h3 {
     font-size: 3rem;
   }
 }
 @media screen and (max-width: 376px) {
-  /* line 225, ../sass/style.scss */
+  /* line 249, ../sass/style.scss */
   h3 {
     font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 321px) {
-  /* line 231, ../sass/style.scss */
+  /* line 255, ../sass/style.scss */
   h3 {
     font-size: 2.2rem;
   }
 
-  /* line 234, ../sass/style.scss */
+  /* line 258, ../sass/style.scss */
   h1 {
     font-size: 2.5rem;
   }

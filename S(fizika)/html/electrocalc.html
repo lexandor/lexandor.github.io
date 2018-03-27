@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Document</title>
 </head>
@@ -15,22 +15,23 @@
         <div class="calculator col-md-5">
 			<div class="calc">
 	        	<div class="title">
-	        		<h1>Кинематический Калькулятор</h1>
-	        		<div class="liner">.</div>
+	        		<h1>Электродинамический Калькулятор</h1>
+	        		<div class="liner _magenta">.</div>
 	            </div>
 				
 				<div class="calc_content">
-		            <h4>Ускорение (м/с<sup>2</sup>)</h4>
+		            <h4>Сила тока (А)</h4>
 		            	<input type="text" id="a">
-		            <h4>Тело тормозит?</h4>
-		            	<input type="checkbox" id="c">
-		            <h4>Начальная скорость (м/с)</h4>
+		            <h4>Подключение</h4>
+		            	<input type="radio" id="pod">
+		            	<input type="radio" id="pod">
+		            <h4>Напряжение (В)</h4>
 		            	<input type="text" id="Vo">
-		            <h4>Конечная скорость (м/с)</h4>
+		            <h4>Сопротивление (Ом)</h4>
 		            	<input type="text" id="Vk">
-		            <h4>Время (с)</h4>
+		            <h4>Теплота (Дж)</h4>
 		            	<input type="text" id="t">
-		            <h4>Расстояние (м)</h4>
+		            <h4>Удельное сопротивление</h4>
 		            <input type="text" id="s">
 		            <br>
 		            <button id="start" class="col-sm-5 col-xs-12">Рассчитать</button>
@@ -67,7 +68,7 @@
     <footer>
     <div class="container-fluide">
     	<div class="row">
-    		<div class="logo col-md-2"><img src="img/logo.png" alt="логотип"></div>
+    		<div class="logo col-md-2"><img src="../img/logo.png" alt="логотип"></div>
     		<div class="copy col-lg-3 col-md-offset-0 col-md-3 col-md-offset-1">&copy;PLEX-team<br>&copy;Ometov Alexander</div>
     		<div class="contacts col-lg-offset-4 col-md-offset-3sm col-md-3">
     			<h5>Contacts:</h5>
@@ -78,8 +79,6 @@
     		</div>
     	</div>
     </div>
-    
-    
     </footer>
 
 
@@ -88,6 +87,6 @@
 
 
 
-<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="../js/el_script.js"></script>
 </body>
 </html>
