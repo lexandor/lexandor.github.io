@@ -1,0 +1,527 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*===========================================
+				HELPERS
+============================================*/
+/* line 27, ../sass/style.scss */
+.or-b {
+  border-right: 4px double #ff9933;
+  border-left: 4px double #ff9933;
+}
+
+/* line 32, ../sass/style.scss */
+.bl-b {
+  border-right: 4px double #1a8cff;
+  border-left: 4px double #1a8cff;
+}
+
+/* line 37, ../sass/style.scss */
+.non-b {
+  border: none;
+}
+
+/* line 41, ../sass/style.scss */
+body {
+  background-color: #001a33;
+  color: #EBEBEB;
+  font-family: Montserrat;
+}
+
+/* line 49, ../sass/style.scss */
+.header {
+  border-bottom: 3px solid black;
+}
+
+/* line 53, ../sass/style.scss */
+div > img {
+  width: 100%;
+}
+
+/* line 58, ../sass/style.scss */
+.fl-l {
+  float: left;
+}
+/* line 62, ../sass/style.scss */
+.fl-r {
+  float: right;
+}
+
+/* line 67, ../sass/style.scss */
+main {
+  position: relative;
+}
+
+/*===========================================
+				FONTS
+============================================*/
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+/*===========================================
+				TEXT
+============================================*/
+/* line 98, ../sass/style.scss */
+p {
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+/* line 103, ../sass/style.scss */
+p, a {
+  font-size: 25px;
+}
+
+/* line 107, ../sass/style.scss */
+b {
+  font-size: 30px;
+  font-weight: 800;
+  color: #1a8cff;
+}
+
+/* line 113, ../sass/style.scss */
+h1 {
+  font-size: 70px;
+}
+
+/* line 117, ../sass/style.scss */
+h2 {
+  font-size: 50px;
+}
+
+/* line 121, ../sass/style.scss */
+h3 {
+  font-size: 40px;
+  color: #1a8cff;
+  padding: 25px 0 25px;
+  line-height: 52px;
+}
+
+/* line 128, ../sass/style.scss */
+h4 {
+  font-size: 30px;
+}
+
+/* line 132, ../sass/style.scss */
+.title {
+  padding: 50px 0px 50px;
+}
+/* line 135, ../sass/style.scss */
+.title_main {
+  text-align: center;
+  z-index: 100;
+}
+/* line 142, ../sass/style.scss */
+.title_left {
+  margin: 40px 0px 80px;
+}
+
+/* line 147, ../sass/style.scss */
+.text {
+  padding-bottom: 100px;
+}
+
+/* line 151, ../sass/style.scss */
+.dark {
+  background-color: #131313;
+  color: #ff9933;
+}
+
+/* line 156, ../sass/style.scss */
+.or > h2 {
+  color: #ff9933;
+}
+
+/* line 160, ../sass/style.scss */
+.bl > h2 {
+  color: #1a8cff;
+}
+
+/* line 164, ../sass/style.scss */
+strong {
+  font-weight: 800;
+}
+
+/*===========================================
+				BUTTONS
+============================================*/
+/*===========================================
+				HEADER
+============================================*/
+/* line 175, ../sass/style.scss */
+.Home_page {
+  background-image: url(../img/bg/main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 183, ../sass/style.scss */
+.Artist_page {
+  padding: 0px;
+  background-image: url(../img/bg/knight.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 190, ../sass/style.scss */
+.Lore_page {
+  padding: 0px;
+  background-image: url(../img/bg/hram.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 197, ../sass/style.scss */
+.Prototype_page {
+  padding: 0px;
+  background-image: url(../img/bg/die.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 204, ../sass/style.scss */
+.header {
+  padding: 210px 0px 270px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+/* line 208, ../sass/style.scss */
+.header_artist_left {
+  background-color: #ff9933;
+  padding: 40px;
+}
+/* line 216, ../sass/style.scss */
+.header_lore_right {
+  background-color: #1a8cff;
+  padding: 40px;
+}
+/* line 222, ../sass/style.scss */
+.header > .title {
+  padding: 30px 0px 30px;
+}
+
+/*===========================================
+				NAVBAR
+============================================*/
+/* line 232, ../sass/style.scss */
+.navigation {
+  padding: 10px;
+}
+/* line 235, ../sass/style.scss */
+.navigation-fluid {
+  background-color: #060606;
+  opacity: 0.8;
+}
+/* line 240, ../sass/style.scss */
+.navigation ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* line 249, ../sass/style.scss */
+.nav_item_link {
+  font-size: 20px;
+  color: #EBEBEB;
+  text-decoration: none;
+  border-top: 0px solid #674a23;
+  border-bottom: 0px solid #674a23;
+  padding: 25px 15px;
+  transition: 0.3s all;
+}
+/* line 259, ../sass/style.scss */
+.nav_item_link:hover {
+  color: #ff9933;
+  text-decoration: none;
+  border-top: 2px solid #ff9800;
+  border-bottom: 2px solid #ff9800;
+  padding: 10px 15px;
+  transition: 0.5s all;
+}
+/* line 268, ../sass/style.scss */
+.nav_item_logo {
+  margin-right: auto;
+}
+
+/* line 274, ../sass/style.scss */
+.logo {
+  height: 60px;
+}
+
+/*===========================================
+				LAST WORKS
+============================================*/
+/* line 282, ../sass/style.scss */
+.last_works {
+  padding-top: 80px;
+}
+
+/* line 286, ../sass/style.scss */
+.page {
+  padding-bottom: 90px;
+}
+/* line 288, ../sass/style.scss */
+.page_left > img {
+  border: 4px double #1a8cff;
+}
+/* line 291, ../sass/style.scss */
+.page_right > img {
+  border: 4px double #1a8cff;
+}
+
+/*===========================================
+				ABOUT COMICS
+============================================*/
+/* line 300, ../sass/style.scss */
+.about_comics {
+  background-color: #131313;
+}
+/* line 303, ../sass/style.scss */
+.about_comics_img {
+  width: 300px;
+  margin-left: 30px;
+  margin-bottom: 25px;
+}
+
+/*===========================================
+				GENERS
+============================================*/
+/* line 315, ../sass/style.scss */
+.geners_bg {
+  background-image: url(../img/bg/genders.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* line 321, ../sass/style.scss */
+.geners_list {
+  margin-top: 35px;
+  margin-bottom: 140px;
+}
+/* line 325, ../sass/style.scss */
+.geners_list_item {
+  list-style-type: circle;
+  font-size: 30px;
+  margin: 15px 0px;
+}
+/* line 332, ../sass/style.scss */
+.geners_title {
+  margin-top: 100px;
+}
+
+/*===========================================
+                HERO
+============================================*/
+/* line 341, ../sass/style.scss */
+.hero {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/*===========================================
+				CALENDAR
+============================================*/
+/* line 350, ../sass/style.scss */
+.calc {
+  height: 340px;
+  border: 3px solid #1a8cff;
+}
+/* line 354, ../sass/style.scss */
+.calc-bg {
+  padding-bottom: 80px;
+  background-image: url(../img/bg/sky.jpg);
+}
+
+/*===========================================
+				SUBSCRIPTION
+============================================*/
+/* line 364, ../sass/style.scss */
+.subscrption {
+  padding-top: 180px;
+  padding-bottom: 180px;
+  background-image: url(../img/bg/knight2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* line 370, ../sass/style.scss */
+.subscrption_btn {
+  background-color: #001a33;
+  color: #1a8cff;
+  border: none;
+  transition: 0.6s;
+}
+/* line 376, ../sass/style.scss */
+.subscrption_btn:hover {
+  background-color: #674a23;
+  color: #ff9933;
+  transition: 0.6s;
+}
+/* line 381, ../sass/style.scss */
+.subscrption_input {
+  height: 45px;
+  font-size: 20px;
+}
+
+/*===========================================
+				FOOTER
+============================================*/
+/* line 391, ../sass/style.scss */
+.footer {
+  background-color: #131313;
+  padding-top: 80px;
+  padding-bottom: 110px;
+}
+/* line 395, ../sass/style.scss */
+.footer .logo {
+  width: 340px;
+}
+/* line 399, ../sass/style.scss */
+.footer-contact-item {
+  margin-bottom: 10px;
+  list-style-type: disc;
+}
+/* line 402, ../sass/style.scss */
+.footer-contact-item-link {
+  color: #fff;
+}
+/* line 405, ../sass/style.scss */
+.footer-contact-item-link:hover {
+  color: #ff9933;
+}
+
+/*===========================================
+				PERSON
+============================================*/
+/* line 416, ../sass/style.scss */
+.avatar {
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+/* line 421, ../sass/style.scss */
+.avatar_bl > img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 6px double #1a8cff;
+}
+/* line 430, ../sass/style.scss */
+.avatar_or > img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 6px double #ff9933;
+}
+
+/* line 440, ../sass/style.scss */
+.work {
+  padding-bottom: 50px;
+}
+/* line 443, ../sass/style.scss */
+.work_bg_artist {
+  background-image: url(../img/bg/night.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* line 449, ../sass/style.scss */
+.work_bg_lore {
+  background-image: url(../img/bg/trees.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 458, ../sass/style.scss */
+.artist, .lore {
+  padding-bottom: 60px;
+  background-color: #131313;
+}
+
+/*===========================================
+                MATERIAL
+============================================*/
+/* line 467, ../sass/style.scss */
+.material {
+  padding-top: 80px;
+}
+
+/*===========================================
+                PROTOTYPES
+============================================*/
+/* line 475, ../sass/style.scss */
+.prot {
+  margin: 50px 0px 50px;
+}
+/* line 477, ../sass/style.scss */
+.prot p {
+  margin-top: 25px;
+}
