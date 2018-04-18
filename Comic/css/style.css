@@ -68,58 +68,58 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /*===========================================
-				HELPERS
+                HELPERS
 ============================================*/
-/* line 27, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 .or-b {
   border-right: 4px double #ff9933;
   border-left: 4px double #ff9933;
 }
 
-/* line 32, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 .bl-b {
   border-right: 4px double #1a8cff;
   border-left: 4px double #1a8cff;
 }
 
-/* line 37, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .non-b {
   border: none;
 }
 
-/* line 41, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 body {
   background-color: #001a33;
   color: #EBEBEB;
   font-family: Montserrat;
 }
 
-/* line 49, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 .header {
   border-bottom: 3px solid black;
 }
 
-/* line 53, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 div > img {
   width: 100%;
 }
 
-/* line 58, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 .fl-l {
   float: left;
 }
-/* line 62, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 .fl-r {
   float: right;
 }
 
-/* line 67, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 main {
   position: relative;
 }
 
 /*===========================================
-				FONTS
+                FONTS
 ============================================*/
 @font-face {
   font-family: 'Montserrat';
@@ -129,37 +129,37 @@ main {
   /* Legacy iOS */
 }
 /*===========================================
-				TEXT
+                TEXT
 ============================================*/
-/* line 98, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 p {
   margin-bottom: 20px;
   line-height: 30px;
 }
 
-/* line 103, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 p, a {
   font-size: 25px;
 }
 
-/* line 107, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 b {
   font-size: 30px;
   font-weight: 800;
   color: #1a8cff;
 }
 
-/* line 113, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
 h1 {
   font-size: 70px;
 }
 
-/* line 117, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 h2 {
   font-size: 50px;
 }
 
-/* line 121, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 h3 {
   font-size: 40px;
   color: #1a8cff;
@@ -167,65 +167,65 @@ h3 {
   line-height: 52px;
 }
 
-/* line 128, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 h4 {
   font-size: 30px;
 }
 
-/* line 132, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 .title {
   padding: 50px 0px 50px;
 }
-/* line 135, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 .title_main {
   text-align: center;
   z-index: 100;
 }
-/* line 142, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 .title_left {
   margin: 40px 0px 80px;
 }
 
-/* line 147, ../sass/style.scss */
+/* line 151, ../sass/style.scss */
 .text {
   padding-bottom: 100px;
 }
 
-/* line 151, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 .dark {
   background-color: #131313;
   color: #ff9933;
 }
 
-/* line 156, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 .or > h2 {
   color: #ff9933;
 }
 
-/* line 160, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 .bl > h2 {
   color: #1a8cff;
 }
 
-/* line 164, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 strong {
   font-weight: 800;
 }
 
 /*===========================================
-				BUTTONS
+                BUTTONS
 ============================================*/
 /*===========================================
-				HEADER
+                HEADER
 ============================================*/
-/* line 175, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 .Home_page {
   background-image: url(../img/bg/main.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-/* line 183, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 .Artist_page {
   padding: 0px;
   background-image: url(../img/bg/knight.jpg);
@@ -233,7 +233,7 @@ strong {
   background-repeat: no-repeat;
 }
 
-/* line 190, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 .Lore_page {
   padding: 0px;
   background-image: url(../img/bg/hram.jpg);
@@ -241,7 +241,7 @@ strong {
   background-repeat: no-repeat;
 }
 
-/* line 197, ../sass/style.scss */
+/* line 201, ../sass/style.scss */
 .Prototype_page {
   padding: 0px;
   background-image: url(../img/bg/die.jpg);
@@ -249,46 +249,51 @@ strong {
   background-repeat: no-repeat;
 }
 
-/* line 204, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
+.Contacts_page {
+  padding-bottom: 200px;
+}
+
+/* line 212, ../sass/style.scss */
 .header {
   padding: 210px 0px 270px;
   background-color: rgba(0, 0, 0, 0.25);
 }
-/* line 208, ../sass/style.scss */
+/* line 216, ../sass/style.scss */
 .header_artist_left {
   background-color: #ff9933;
   padding: 40px;
 }
-/* line 216, ../sass/style.scss */
+/* line 227, ../sass/style.scss */
 .header_lore_right {
   background-color: #1a8cff;
   padding: 40px;
 }
-/* line 222, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 .header > .title {
   padding: 30px 0px 30px;
 }
 
 /*===========================================
-				NAVBAR
+                NAVBAR
 ============================================*/
-/* line 232, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 .navigation {
   padding: 10px;
 }
-/* line 235, ../sass/style.scss */
+/* line 245, ../sass/style.scss */
 .navigation-fluid {
   background-color: #060606;
   opacity: 0.8;
 }
-/* line 240, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 .navigation ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-/* line 249, ../sass/style.scss */
+/* line 259, ../sass/style.scss */
 .nav_item_link {
   font-size: 20px;
   color: #EBEBEB;
@@ -298,7 +303,7 @@ strong {
   padding: 25px 15px;
   transition: 0.3s all;
 }
-/* line 259, ../sass/style.scss */
+/* line 269, ../sass/style.scss */
 .nav_item_link:hover {
   color: #ff9933;
   text-decoration: none;
@@ -307,45 +312,45 @@ strong {
   padding: 10px 15px;
   transition: 0.5s all;
 }
-/* line 268, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 .nav_item_logo {
   margin-right: auto;
 }
 
-/* line 274, ../sass/style.scss */
+/* line 284, ../sass/style.scss */
 .logo {
   height: 60px;
 }
 
 /*===========================================
-				LAST WORKS
+                LAST WORKS
 ============================================*/
-/* line 282, ../sass/style.scss */
+/* line 292, ../sass/style.scss */
 .last_works {
   padding-top: 80px;
 }
 
-/* line 286, ../sass/style.scss */
+/* line 296, ../sass/style.scss */
 .page {
   padding-bottom: 90px;
 }
-/* line 288, ../sass/style.scss */
+/* line 299, ../sass/style.scss */
 .page_left > img {
   border: 4px double #1a8cff;
 }
-/* line 291, ../sass/style.scss */
+/* line 303, ../sass/style.scss */
 .page_right > img {
   border: 4px double #1a8cff;
 }
 
 /*===========================================
-				ABOUT COMICS
+                ABOUT COMICS
 ============================================*/
-/* line 300, ../sass/style.scss */
+/* line 312, ../sass/style.scss */
 .about_comics {
   background-color: #131313;
 }
-/* line 303, ../sass/style.scss */
+/* line 315, ../sass/style.scss */
 .about_comics_img {
   width: 300px;
   margin-left: 30px;
@@ -353,26 +358,26 @@ strong {
 }
 
 /*===========================================
-				GENERS
+                GENERS
 ============================================*/
-/* line 315, ../sass/style.scss */
+/* line 327, ../sass/style.scss */
 .geners_bg {
   background-image: url(../img/bg/genders.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 321, ../sass/style.scss */
+/* line 333, ../sass/style.scss */
 .geners_list {
   margin-top: 35px;
   margin-bottom: 140px;
 }
-/* line 325, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 .geners_list_item {
   list-style-type: circle;
   font-size: 30px;
   margin: 15px 0px;
 }
-/* line 332, ../sass/style.scss */
+/* line 344, ../sass/style.scss */
 .geners_title {
   margin-top: 100px;
 }
@@ -380,30 +385,52 @@ strong {
 /*===========================================
                 HERO
 ============================================*/
-/* line 341, ../sass/style.scss */
+/* line 353, ../sass/style.scss */
 .hero {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
 /*===========================================
-				CALENDAR
+                CALENDAR
 ============================================*/
-/* line 350, ../sass/style.scss */
-.calc {
+/* line 363, ../sass/style.scss */
+.calend {
   height: 340px;
-  border: 3px solid #1a8cff;
 }
-/* line 354, ../sass/style.scss */
-.calc-bg {
+/* line 366, ../sass/style.scss */
+.calend-bg {
   padding-bottom: 80px;
   background-image: url(../img/bg/sky.jpg);
 }
+/* line 373, ../sass/style.scss */
+.calend-table-date td {
+  background-color: #E2E2E2;
+  padding: 15px;
+  width: 30px;
+  height: 30px;
+  color: #060606;
+}
+/* line 381, ../sass/style.scss */
+.calend-table-date td.disactive {
+  background-color: #9E9E9E;
+  color: #EBEBEB;
+}
+/* line 386, ../sass/style.scss */
+.calend-table-date td.active {
+  background-color: #ff1a1a;
+  color: #EBEBEB;
+}
+/* line 391, ../sass/style.scss */
+.calend-table-date .days {
+  background-color: #060606;
+  color: #ff9933;
+}
 
 /*===========================================
-				SUBSCRIPTION
+                SUBSCRIPTION
 ============================================*/
-/* line 364, ../sass/style.scss */
+/* line 406, ../sass/style.scss */
 .subscrption {
   padding-top: 180px;
   padding-bottom: 180px;
@@ -411,62 +438,62 @@ strong {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 370, ../sass/style.scss */
+/* line 413, ../sass/style.scss */
 .subscrption_btn {
   background-color: #001a33;
   color: #1a8cff;
   border: none;
   transition: 0.6s;
 }
-/* line 376, ../sass/style.scss */
+/* line 420, ../sass/style.scss */
 .subscrption_btn:hover {
   background-color: #674a23;
   color: #ff9933;
   transition: 0.6s;
 }
-/* line 381, ../sass/style.scss */
+/* line 426, ../sass/style.scss */
 .subscrption_input {
   height: 45px;
   font-size: 20px;
 }
 
 /*===========================================
-				FOOTER
+                FOOTER
 ============================================*/
-/* line 391, ../sass/style.scss */
+/* line 436, ../sass/style.scss */
 .footer {
   background-color: #131313;
   padding-top: 80px;
   padding-bottom: 110px;
 }
-/* line 395, ../sass/style.scss */
+/* line 441, ../sass/style.scss */
 .footer .logo {
   width: 340px;
 }
-/* line 399, ../sass/style.scss */
+/* line 446, ../sass/style.scss */
 .footer-contact-item {
   margin-bottom: 10px;
   list-style-type: disc;
 }
-/* line 402, ../sass/style.scss */
+/* line 450, ../sass/style.scss */
 .footer-contact-item-link {
   color: #fff;
 }
-/* line 405, ../sass/style.scss */
+/* line 454, ../sass/style.scss */
 .footer-contact-item-link:hover {
   color: #ff9933;
 }
 
 /*===========================================
-				PERSON
+                PERSON
 ============================================*/
-/* line 416, ../sass/style.scss */
+/* line 465, ../sass/style.scss */
 .avatar {
   border-radius: 50%;
   position: relative;
   overflow: hidden;
 }
-/* line 421, ../sass/style.scss */
+/* line 471, ../sass/style.scss */
 .avatar_bl > img {
   position: relative;
   width: 100%;
@@ -474,7 +501,7 @@ strong {
   border-radius: 50%;
   border: 6px double #1a8cff;
 }
-/* line 430, ../sass/style.scss */
+/* line 481, ../sass/style.scss */
 .avatar_or > img {
   position: relative;
   width: 100%;
@@ -483,24 +510,24 @@ strong {
   border: 6px double #ff9933;
 }
 
-/* line 440, ../sass/style.scss */
+/* line 491, ../sass/style.scss */
 .work {
   padding-bottom: 50px;
 }
-/* line 443, ../sass/style.scss */
+/* line 495, ../sass/style.scss */
 .work_bg_artist {
   background-image: url(../img/bg/night.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 449, ../sass/style.scss */
+/* line 504, ../sass/style.scss */
 .work_bg_lore {
   background-image: url(../img/bg/trees.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-/* line 458, ../sass/style.scss */
+/* line 515, ../sass/style.scss */
 .artist, .lore {
   padding-bottom: 60px;
   background-color: #131313;
@@ -509,19 +536,45 @@ strong {
 /*===========================================
                 MATERIAL
 ============================================*/
-/* line 467, ../sass/style.scss */
+/* line 524, ../sass/style.scss */
 .material {
   padding-top: 80px;
+}
+
+/* line 528, ../sass/style.scss */
+.wacom li {
+  font-size: 25px;
+  list-style-type: circle;
+  margin: 10px 0px;
 }
 
 /*===========================================
                 PROTOTYPES
 ============================================*/
-/* line 475, ../sass/style.scss */
+/* line 537, ../sass/style.scss */
 .prot {
   margin: 50px 0px 50px;
 }
-/* line 477, ../sass/style.scss */
+/* line 540, ../sass/style.scss */
 .prot p {
   margin-top: 25px;
+}
+
+/*===========================================
+                CONTACTS
+============================================*/
+/* line 549, ../sass/style.scss */
+.contact {
+  margin-top: 80px;
+}
+/* line 551, ../sass/style.scss */
+.contact-list {
+  padding-left: 100px;
+  border: 1px dashed #E2E2E2;
+}
+/* line 554, ../sass/style.scss */
+.contact-list-item {
+  list-style-type: circle;
+  color: #1a8cff;
+  margin: 10px 0px;
 }
