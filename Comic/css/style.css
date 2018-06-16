@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -70,50 +70,50 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*===========================================
                 HELPERS
 ============================================*/
-/* line 31, ../sass/style.scss */
+/* line 27, ../sass/style.scss */
 .or-b {
   border-right: 4px double #ff9933;
   border-left: 4px double #ff9933;
 }
 
-/* line 36, ../sass/style.scss */
+/* line 32, ../sass/style.scss */
 .bl-b {
   border-right: 4px double #1a8cff;
   border-left: 4px double #1a8cff;
 }
 
-/* line 41, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 .non-b {
   border: none;
 }
 
-/* line 45, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 body {
   background-color: #001a33;
   color: #EBEBEB;
   font-family: Montserrat;
 }
 
-/* line 53, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 .header {
   border-bottom: 3px solid black;
 }
 
-/* line 57, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 div > img {
   width: 100%;
 }
 
-/* line 62, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 .fl-l {
   float: left;
 }
-/* line 66, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 .fl-r {
   float: right;
 }
 
-/* line 71, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 main {
   position: relative;
 }
@@ -131,35 +131,35 @@ main {
 /*===========================================
                 TEXT
 ============================================*/
-/* line 102, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 p {
   margin-bottom: 20px;
   line-height: 30px;
 }
 
-/* line 107, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 p, a {
   font-size: 25px;
 }
 
-/* line 111, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 b {
   font-size: 30px;
   font-weight: 800;
   color: #1a8cff;
 }
 
-/* line 117, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 h1 {
   font-size: 70px;
 }
 
-/* line 121, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
 h2 {
   font-size: 50px;
 }
 
-/* line 125, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 h3 {
   font-size: 40px;
   color: #1a8cff;
@@ -167,47 +167,47 @@ h3 {
   line-height: 52px;
 }
 
-/* line 132, ../sass/style.scss */
+/* line 128, ../sass/style.scss */
 h4 {
   font-size: 30px;
 }
 
-/* line 136, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 .title {
   padding: 50px 0px 50px;
 }
-/* line 139, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 .title_main {
   text-align: center;
   z-index: 100;
 }
-/* line 146, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 .title_left {
   margin: 40px 0px 80px;
 }
 
-/* line 151, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 .text {
   padding-bottom: 100px;
 }
 
-/* line 155, ../sass/style.scss */
+/* line 151, ../sass/style.scss */
 .dark {
   background-color: #131313;
   color: #ff9933;
 }
 
-/* line 160, ../sass/style.scss */
+/* line 156, ../sass/style.scss */
 .or > h2 {
   color: #ff9933;
 }
 
-/* line 164, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 .bl > h2 {
   color: #1a8cff;
 }
 
-/* line 168, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 strong {
   font-weight: 800;
 }
@@ -218,14 +218,14 @@ strong {
 /*===========================================
                 HEADER
 ============================================*/
-/* line 179, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 .Home_page {
   background-image: url(../img/bg/main.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-/* line 187, ../sass/style.scss */
+/* line 183, ../sass/style.scss */
 .Artist_page {
   padding: 0px;
   background-image: url(../img/bg/knight.jpg);
@@ -233,7 +233,7 @@ strong {
   background-repeat: no-repeat;
 }
 
-/* line 194, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 .Lore_page {
   padding: 0px;
   background-image: url(../img/bg/hram.jpg);
@@ -241,7 +241,7 @@ strong {
   background-repeat: no-repeat;
 }
 
-/* line 201, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 .Prototype_page {
   padding: 0px;
   background-image: url(../img/bg/die.jpg);
@@ -249,27 +249,22 @@ strong {
   background-repeat: no-repeat;
 }
 
-/* line 208, ../sass/style.scss */
-.Contacts_page {
-  padding-bottom: 200px;
-}
-
-/* line 212, ../sass/style.scss */
+/* line 204, ../sass/style.scss */
 .header {
   padding: 210px 0px 270px;
   background-color: rgba(0, 0, 0, 0.25);
 }
-/* line 216, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 .header_artist_left {
   background-color: #ff9933;
   padding: 40px;
 }
-/* line 227, ../sass/style.scss */
+/* line 219, ../sass/style.scss */
 .header_lore_right {
   background-color: #1a8cff;
   padding: 40px;
 }
-/* line 233, ../sass/style.scss */
+/* line 225, ../sass/style.scss */
 .header > .title {
   padding: 30px 0px 30px;
 }
@@ -277,23 +272,23 @@ strong {
 /*===========================================
                 NAVBAR
 ============================================*/
-/* line 242, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 .navigation {
   padding: 10px;
 }
-/* line 245, ../sass/style.scss */
+/* line 237, ../sass/style.scss */
 .navigation-fluid {
   background-color: #060606;
   opacity: 0.8;
 }
-/* line 250, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 .navigation ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-/* line 259, ../sass/style.scss */
+/* line 251, ../sass/style.scss */
 .nav_item_link {
   font-size: 20px;
   color: #EBEBEB;
@@ -303,7 +298,7 @@ strong {
   padding: 25px 15px;
   transition: 0.3s all;
 }
-/* line 269, ../sass/style.scss */
+/* line 261, ../sass/style.scss */
 .nav_item_link:hover {
   color: #ff9933;
   text-decoration: none;
@@ -312,33 +307,48 @@ strong {
   padding: 10px 15px;
   transition: 0.5s all;
 }
-/* line 278, ../sass/style.scss */
+/* line 270, ../sass/style.scss */
 .nav_item_logo {
   margin-right: auto;
 }
+/* line 274, ../sass/style.scss */
+.nav_item_btn {
+  display: none;
+  padding: 10px;
+}
 
-/* line 284, ../sass/style.scss */
+/* line 286, ../sass/style.scss */
 .logo {
   height: 60px;
+}
+
+/* line 290, ../sass/style.scss */
+.fa-bars:hover {
+  color: #ff9933;
 }
 
 /*===========================================
                 LAST WORKS
 ============================================*/
-/* line 292, ../sass/style.scss */
+/* line 298, ../sass/style.scss */
 .last_works {
   padding-top: 80px;
 }
 
-/* line 296, ../sass/style.scss */
+/* line 302, ../sass/style.scss */
+.work-card {
+  margin-top: 10px;
+}
+
+/* line 306, ../sass/style.scss */
 .page {
   padding-bottom: 90px;
 }
-/* line 299, ../sass/style.scss */
+/* line 309, ../sass/style.scss */
 .page_left > img {
   border: 4px double #1a8cff;
 }
-/* line 303, ../sass/style.scss */
+/* line 313, ../sass/style.scss */
 .page_right > img {
   border: 4px double #1a8cff;
 }
@@ -346,11 +356,11 @@ strong {
 /*===========================================
                 ABOUT COMICS
 ============================================*/
-/* line 312, ../sass/style.scss */
+/* line 322, ../sass/style.scss */
 .about_comics {
   background-color: #131313;
 }
-/* line 315, ../sass/style.scss */
+/* line 325, ../sass/style.scss */
 .about_comics_img {
   width: 300px;
   margin-left: 30px;
@@ -360,24 +370,24 @@ strong {
 /*===========================================
                 GENERS
 ============================================*/
-/* line 327, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 .geners_bg {
   background-image: url(../img/bg/genders.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 333, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .geners_list {
   margin-top: 35px;
   margin-bottom: 140px;
 }
-/* line 337, ../sass/style.scss */
+/* line 347, ../sass/style.scss */
 .geners_list_item {
   list-style-type: circle;
   font-size: 30px;
   margin: 15px 0px;
 }
-/* line 344, ../sass/style.scss */
+/* line 354, ../sass/style.scss */
 .geners_title {
   margin-top: 100px;
 }
@@ -385,7 +395,7 @@ strong {
 /*===========================================
                 HERO
 ============================================*/
-/* line 353, ../sass/style.scss */
+/* line 363, ../sass/style.scss */
 .hero {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -394,16 +404,31 @@ strong {
 /*===========================================
                 CALENDAR
 ============================================*/
-/* line 363, ../sass/style.scss */
+/* line 372, ../sass/style.scss */
+.calc {
+  height: 340px;
+  border: 3px solid #1a8cff;
+}
+/* line 376, ../sass/style.scss */
+.calc-bg {
+  padding-bottom: 80px;
+  background-image: url(../img/bg/sky.jpg);
+}
+
+/* line 382, ../sass/style.scss */
 .calend {
   height: 340px;
 }
+
 /* line 366, ../sass/style.scss */
+/* line 386, ../sass/style.scss */
 .calend-bg {
   padding-bottom: 80px;
   background-image: url(../img/bg/sky.jpg);
 }
+
 /* line 373, ../sass/style.scss */
+/* line 391, ../sass/style.scss */
 .calend-table-date td {
   background-color: #E2E2E2;
   padding: 15px;
@@ -411,17 +436,23 @@ strong {
   height: 30px;
   color: #060606;
 }
+
 /* line 381, ../sass/style.scss */
+/* line 399, ../sass/style.scss */
 .calend-table-date td.disactive {
   background-color: #9E9E9E;
   color: #EBEBEB;
 }
+
 /* line 386, ../sass/style.scss */
+/* line 404, ../sass/style.scss */
 .calend-table-date td.active {
   background-color: #ff1a1a;
   color: #EBEBEB;
 }
+
 /* line 391, ../sass/style.scss */
+/* line 409, ../sass/style.scss */
 .calend-table-date .days {
   background-color: #060606;
   color: #ff9933;
@@ -430,7 +461,7 @@ strong {
 /*===========================================
                 SUBSCRIPTION
 ============================================*/
-/* line 406, ../sass/style.scss */
+/* line 418, ../sass/style.scss */
 .subscrption {
   padding-top: 180px;
   padding-bottom: 180px;
@@ -438,20 +469,20 @@ strong {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 413, ../sass/style.scss */
+/* line 425, ../sass/style.scss */
 .subscrption_btn {
   background-color: #001a33;
   color: #1a8cff;
   border: none;
   transition: 0.6s;
 }
-/* line 420, ../sass/style.scss */
+/* line 432, ../sass/style.scss */
 .subscrption_btn:hover {
   background-color: #674a23;
   color: #ff9933;
   transition: 0.6s;
 }
-/* line 426, ../sass/style.scss */
+/* line 438, ../sass/style.scss */
 .subscrption_input {
   height: 45px;
   font-size: 20px;
@@ -460,26 +491,26 @@ strong {
 /*===========================================
                 FOOTER
 ============================================*/
-/* line 436, ../sass/style.scss */
+/* line 448, ../sass/style.scss */
 .footer {
   background-color: #131313;
   padding-top: 80px;
   padding-bottom: 110px;
 }
-/* line 441, ../sass/style.scss */
+/* line 453, ../sass/style.scss */
 .footer .logo {
   width: 340px;
 }
-/* line 446, ../sass/style.scss */
+/* line 458, ../sass/style.scss */
 .footer-contact-item {
   margin-bottom: 10px;
   list-style-type: disc;
 }
-/* line 450, ../sass/style.scss */
+/* line 462, ../sass/style.scss */
 .footer-contact-item-link {
   color: #fff;
 }
-/* line 454, ../sass/style.scss */
+/* line 466, ../sass/style.scss */
 .footer-contact-item-link:hover {
   color: #ff9933;
 }
@@ -487,13 +518,13 @@ strong {
 /*===========================================
                 PERSON
 ============================================*/
-/* line 465, ../sass/style.scss */
+/* line 477, ../sass/style.scss */
 .avatar {
   border-radius: 50%;
   position: relative;
   overflow: hidden;
 }
-/* line 471, ../sass/style.scss */
+/* line 483, ../sass/style.scss */
 .avatar_bl > img {
   position: relative;
   width: 100%;
@@ -501,7 +532,7 @@ strong {
   border-radius: 50%;
   border: 6px double #1a8cff;
 }
-/* line 481, ../sass/style.scss */
+/* line 493, ../sass/style.scss */
 .avatar_or > img {
   position: relative;
   width: 100%;
@@ -510,24 +541,24 @@ strong {
   border: 6px double #ff9933;
 }
 
-/* line 491, ../sass/style.scss */
+/* line 503, ../sass/style.scss */
 .work {
   padding-bottom: 50px;
 }
-/* line 495, ../sass/style.scss */
+/* line 507, ../sass/style.scss */
 .work_bg_artist {
   background-image: url(../img/bg/night.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 504, ../sass/style.scss */
+/* line 516, ../sass/style.scss */
 .work_bg_lore {
   background-image: url(../img/bg/trees.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-/* line 515, ../sass/style.scss */
+/* line 527, ../sass/style.scss */
 .artist, .lore {
   padding-bottom: 60px;
   background-color: #131313;
@@ -536,45 +567,161 @@ strong {
 /*===========================================
                 MATERIAL
 ============================================*/
-/* line 524, ../sass/style.scss */
+/* line 536, ../sass/style.scss */
 .material {
-  padding-top: 80px;
-}
-
-/* line 528, ../sass/style.scss */
-.wacom li {
-  font-size: 25px;
-  list-style-type: circle;
-  margin: 10px 0px;
+  padding: 80px 0px;
 }
 
 /*===========================================
                 PROTOTYPES
 ============================================*/
-/* line 537, ../sass/style.scss */
+/* line 544, ../sass/style.scss */
 .prot {
   margin: 50px 0px 50px;
 }
-/* line 540, ../sass/style.scss */
+/* line 547, ../sass/style.scss */
 .prot p {
   margin-top: 25px;
 }
 
 /*===========================================
-                CONTACTS
+                MEDIA
 ============================================*/
-/* line 549, ../sass/style.scss */
-.contact {
-  margin-top: 80px;
+@media screen and (max-width: 1080px) {
+  /* line 558, ../sass/style.scss */
+  .nav_item_link {
+    font-size: 17px;
+  }
+
+  /* line 562, ../sass/style.scss */
+  h2 {
+    font-size: 40px;
+  }
 }
-/* line 551, ../sass/style.scss */
-.contact-list {
-  padding-left: 100px;
-  border: 1px dashed #E2E2E2;
+@media screen and (max-width: 980px) {
+  /* line 576, ../sass/style.scss */
+  .navigation ul {
+    display: block;
+  }
+
+  /* line 580, ../sass/style.scss */
+  .navigation {
+    opacity: 0.8;
+  }
+
+  /* line 584, ../sass/style.scss */
+  .navigation-fluid {
+    position: absolute;
+    opacity: 1;
+    z-index: 100;
+  }
+
+  /* line 590, ../sass/style.scss */
+  .nav_item {
+    display: none;
+    margin: 35px 0px;
+  }
+  /* line 594, ../sass/style.scss */
+  .nav_item_logo {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  /* line 599, ../sass/style.scss */
+  .nav_item_btn {
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+  }
+  /* line 605, ../sass/style.scss */
+  .nav_item_btn:hover {
+    border: #ff9933;
+  }
+  /* line 609, ../sass/style.scss */
+  .nav_item_mobile {
+    display: block;
+  }
+
+  /* line 614, ../sass/style.scss */
+  p, a {
+    font-size: 22px;
+  }
+
+  /* line 618, ../sass/style.scss */
+  .header_lore_right .title, .header_artist_left .title {
+    margin-top: 40px;
+  }
+
+  /* line 622, ../sass/style.scss */
+  .header_lore_left, .header_artist_right {
+    display: none;
+  }
+
+  /* line 626, ../sass/style.scss */
+  .Lore_page .row, .Artist_page .row {
+    margin: 0;
+  }
 }
-/* line 554, ../sass/style.scss */
-.contact-list-item {
-  list-style-type: circle;
-  color: #1a8cff;
-  margin: 10px 0px;
+@media screen and (max-width: 780px) {
+  /* line 632, ../sass/style.scss */
+  .fl-r {
+    width: 80%;
+    float: none;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  /* line 639, ../sass/style.scss */
+  .subscrption_input {
+    margin-top: 20px;
+  }
+
+  /* line 643, ../sass/style.scss */
+  .footer .logo {
+    margin-bottom: 105px;
+  }
+}
+@media screen and (max-width: 680px) {
+  /* line 650, ../sass/style.scss */
+  .title {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 657, ../sass/style.scss */
+  .geners_list {
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 410px) {
+  /* line 663, ../sass/style.scss */
+  .calend-bg {
+    display: none;
+  }
+
+  /* line 667, ../sass/style.scss */
+  .footer .logo {
+    width: 250px;
+  }
+
+  /* line 671, ../sass/style.scss */
+  .footer-contact-item-link {
+    font-size: 18px;
+  }
+
+  /* line 675, ../sass/style.scss */
+  h2 {
+    font-size: 30px;
+  }
+
+  /* line 679, ../sass/style.scss */
+  h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 330px) {
+  /* line 689, ../sass/style.scss */
+  h1 {
+    font-size: 40px;
+  }
 }
