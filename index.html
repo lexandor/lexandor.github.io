@@ -1,28 +1,348 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Portfolio</title>
-	<link rel="stylesheet" href="style.css">
-</head>
+<html lang="ru"></html>
+	<head>
+		<title>Omet.corp</title>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="css/libs.min.css"/>
+		<link rel="stylesheet" href="css/main.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,700&display=swap&subset=cyrillic" rel="stylesheet"> <!--Montserrat-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous"> <!--Icons-->
+	</head>
 <body>
-	<div class="container">
-		<ul>
-			<li><a href="ALP/html/index.html">ALP</a></li>
-			<li><a href="ALP_2/index.html">ALP_2</a></li>
-			<li><a href="ALP_3/index.html">ALP_3</a></li>
-			<li><a href="ALP_PLEX_1/html/index.html">Plex 1</a></li>
-			<li><a href="ALP_PLEX_2/html/index.html">Plex 2</a></li>
-			<li><a href="ALP_PLEX_3/index.html">Plex 3</a></li>
-			<li><a href="ALP_PLEX_4/index.html">Plex 4</a></li>
-			<li><a href="BoostFolia/index.html">BF</a></li>
-			<li><a href="PLEX/index.html">PELX</a></li>
-			<li><a href="PLEX_2/index.html">PELX 2</a></li>
-			<li><a href="PLEX_3/index.html">PELX 3</a></li>
-			<li><a href="S(fizika)/index.html">Calc.js</a></li>
-			<li><a href="Comic/index.html">CWISOP (Old)</a></li>
-			<li><a href="Portfolio_DEMO/index.html">OMET (demo)</a></li>
-		</ul>
-	</div>
+	
+	<header id="header">
+		<div class="hw">
+		<div class="container">
+			<div class="row">
+				<nav class="nav">
+					<div class="contact-info">
+						<a href="tel:+79636108762">8 (963) 610 87 62</a><br/><a href="mailto:ometov.sasha@mail.ru">ometov.sasha@mail.ru</a>
+					</div>
+					<ul class="menu">
+						<li class="menu_item"><a href="#works" class="menu_item_link">Работы</a></li>
+						<li class="menu_item"><a href="#about" class="menu_item_link">Обо мне</a></li>
+						<li class="menu_item"><a href="#price" class="menu_item_link">Цены</a></li>
+						<li class="menu_item"><a href="#footer" class="menu_item_link">Контакты</a></li>
+					</ul>
+					<button class="menu_btn"><i class="fas fa-bars"></i></button>
+				</nav>
+			</div>
+			<div class="row">
+				<div class="header_title">
+					<!-- <h1>HTML Верстальщик</h1> -->
+					<h1>Web Разработчик</h1>
+					<h2>Омётов Александр</h2>
+					<button class="header_btn btn">Заказать</button>
+				</div>
+			</div>
+		</div>
+		</div>
+	</header>
+	<section id="works">
+		<div class="container">
+			<div class="row">
+				<div class="title">
+					<h3>Мои работы</h3>
+				</div>
+			</div>
+			<div class="row work">
+				<div class="work_card col-lg-5 col-md-9" style="background-image: url(img/1.jpg)">
+					<div class="work_card_item">
+						<h4>Plex Blog</h4>
+						<a href="works/work-blog.html">Подробнее</a>
+					</div>
+				</div>
+
+				<div class="work_card col-lg-5 col-md-9" style="background-image: url(img/2.jpg)">
+					<div class="work_card_item">
+						<h4>Mobile App Promo</h4>
+						<a href="works/work-calc-promo.html">Подробнее</a>
+					</div>
+				</div>
+				<div class="work_card col-lg-5 col-md-9" style="background-image: url(img/3.jpg)">
+					<div class="work_card_item">
+						<h4>Kinematic Calc (JS)</h4>
+						<a href="works/work-calc.html">Подробнее</a>
+					</div>
+				</div>
+				<div class="work_card col-lg-5 col-md-9" style="background-image: url(img/4.jpg)">
+					<div class="work_card_item">
+						<h4>Web Agency</h4>
+						<a href="works/work-landing.html">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="about">
+		<div class="container">
+			<div class="row">
+				<div class="title">
+					<h3>Обо мне</h3>
+				</div>
+			</div>
+			<div class="row about">
+				<div class="ava">
+					<img src="img/pers0.jpg" alt="I">
+				</div>
+				<div>
+					<p>Здравствуйте, занимаюсь 
+						веб разработкой на протяжении 2 лет. Делаю так, чтобы за мной не нужно было переделывать. Ответственно отношусь к своей работе и всегда на связи.</p>
+
+					<ul class="socialbar">
+						<li class="soc soc_vk"><a href="https://vk.com/plexer17" target="_blank"><i class="fab fa-vk"></i></a></li>
+						<li class="soc soc_tel"><a href="https://t.me/ALeX_MetaL" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+						<li class="soc soc_email"><a href="mailto:ometov.sasha@mail.ru" target="_blank"><i class="fas fa-at"></i></li>
+						<li class="soc soc_git"><a href="https://github.com/lexandor" target="_blank"><i class="fab fa-github-alt"></i></a></li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<section id="skills">
+		<div class="container">
+			<div class="row">
+				<div class="title center">
+					<h3>Навыки</h3>
+				</div>
+			</div>
+			<div class="row skill">
+				
+				<div class="skill_card col-lg-3 col-md-8 col-sm-12">
+					<div id="f-e" class="p_bar_c"></div>
+					<h4 class="skill_card_title">Front - End</h4>
+					<span>HTML</span>
+					<div id="html" class="p_bar"></div>
+					<span>CSS</span>
+					<div id="css" class="p_bar"></div>
+					<span>JavaScript</span>
+					<div id="js" class="p_bar"></div>
+					<span>React.js</span>
+					<div id="react" class="p_bar"></div>
+				</div>
+
+				<div class="skill_card col-lg-3 col-md-8 col-sm-12">
+					<div id="b-e" class="p_bar_c"></div>
+					<h4 class="skill_card_title">Back - End</h4>
+					<span>PHP</span>
+					<div id="php" class="p_bar"></div>
+					<span>WordPress</span>
+					<div id="wp" class="p_bar"></div>
+					<span>Python</span>
+					<div id="py" class="p_bar"></div>
+					<span>Django</span>
+					<div id="dj" class="p_bar"></div>
+				</div>
+
+				<div class="skill_card col-lg-3 col-md-8 col-sm-12">
+					<div id="diz" class="p_bar_c"></div>
+					<h4 class="skill_card_title">Design</h4>
+					<span>PhotoShop</span>
+					<div id="ps" class="p_bar"></div>
+					<span>Illustrator</span>
+					<div id="ill" class="p_bar"></div>
+					<span>Figma</span>
+					<div id="fig" class="p_bar"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="skills_more">
+		<div class="container">
+			<div class="row">
+				<div class="title center">
+					<h3>Дополнительные навыки</h3>
+				</div>
+			</div>
+			<div class="row skill">
+				<div class="skill_card col-lg-3">
+					<span>Git</span>
+					<div id="git" class="p_bar"></div>
+					<span>Gulp</span>
+					<div id="gulp" class="p_bar"></div>
+					<span>Sass (Scss)</span>
+					<div id="sass" class="p_bar"></div>
+				</div>
+				<p class="col-lg-7">Дополнительные навыки - это те навыки, которые позволяю делать работу быстрее и качественее.</p>
+			</div>
+		</div>
+	</section>
+	<section id="price">
+		<div class="container">
+			<div class="row">
+				<div class="title">
+					<h3>Цены</h3>
+				</div>
+			</div>
+			<div class="row price">
+				<div class="price_section">
+					<h5 class="price_list_title">Дизайн</h5>
+					<ul class="price_list">
+						<li class="price_list_item">
+							<span data-price="200">Секция -- 200 руб</span>
+							<form action="#" class="price_list_form">
+								<input class="price_list_count" type="text" value="0"><button class="price_list_count_btn plus">+</button><button class="price_list_count_btn minus">-</button>
+								<span class="price_list_amount">: 0 руб</span>
+							</form>
+						</li>
+						<li class="price_list_item">
+							<span data-price="20%">Версия для мобильных -- +20%</span>
+							<form action="#" class="price_list_form">
+								<button class="price_list_check"></button>
+								<span class="price_list_amount">: 0 руб</span>
+							</form>
+						</li>
+					</ul>
+				</div>
+
+				<div class="price_section">
+					<h5 class="price_list_title">Верстка</h5>
+					<ul class="price_list">
+						<li class="price_list_item">
+							<span data-price="300">Секция -- 300 руб</span>
+							<form action="#" class="price_list_form">
+								<input class="price_list_count" type="text" value="0"><button class="price_list_count_btn plus">+</button><button class="price_list_count_btn minus">-</button>
+								<span class="price_list_amount">: 0 руб</span>
+							</form>
+						</li>
+						<li class="price_list_item">
+							<span data-price="500">Интерактивная секция -- 500 руб</span>
+							<form action="#" class="price_list_form">
+								<input class="price_list_count" type="text" value="0"><button class="price_list_count_btn plus">+</button><button class="price_list_count_btn minus">-</button>
+								<span class="price_list_amount">: 0 руб</span>
+							</form>
+						</li>
+						<li class="price_list_item">
+							<span data-price="150">Анимации -- 150 руб (за секцию)</span>
+							<form action="#" class="price_list_form">
+								<input class="price_list_count" type="text" value="0"><button class="price_list_count_btn plus">+</button><button class="price_list_count_btn minus">-</button>
+								<span class="price_list_amount">: 0 руб</span>
+							</form>
+						</li>
+						<li class="price_list_item">
+							<span data-price="20%">Мобильная адаптивность -- +20%</span>
+							<form action="#" class="price_list_form">
+								<button class="price_list_check"></button>
+								<span class="price_list_amount">: 0 руб</span>
+							</form>
+						</li>
+						<p>*Интеактивная секция - это секция с применением  JavaScript</p>
+					</ul>
+				</div>
+
+				<div class="price_section">
+					<h5 class="price_list_title">Разработка</h5>
+					<ul class="price_list">
+						<li class="price_list_item">
+							<span data-price="1500">Админка -- 1500 руб</span>
+							<form action="#" class="price_list_form">
+								<button class="price_list_check"></button>
+								<span class="price_list_amount">: 0 руб</span>
+							</form>
+						</li>
+						<li class="price_list_item">
+							<span data-price="800">Формаобратной связи -- 800 руб</span>
+							<form action="#" class="price_list_form">
+								<input class="price_list_count" type="text" value="0"><button class="price_list_count_btn plus">+</button><button class="price_list_count_btn minus">-</button>
+								<span class="price_list_amount">: 0 руб</span>
+							</form>
+						</li>
+						<li class="price_list_item">
+							<span data-price="1000">Авторизация и вход -- 1000 руб</span>
+							<form action="#" class="price_list_form">
+								<button class="price_list_check"></button>
+								<span class="price_list_amount">: 0 руб</span>
+							</form>
+						</li>
+						<li class="price_list_item">
+							<span data-price="3000">WordPress -- 3000 руб</span>
+							<form action="#" class="price_list_form">
+								<button class="price_list_check"></button>
+								<span class="price_list_amount">: 0 руб</span>
+							</form>
+						</li>
+					</ul>
+				</div>
+
+				<div class="amount">
+					<hr>
+					<p>ИТОГО: </p>
+					<p id="amount">0 руб</p>
+					<button class="btn btn-white">Рассчитать</button>
+					<button class="btn btn-black">Заказать</button>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<section id="consult">
+		<div class="container">
+			<div class="row consalt">
+				<form action="" class="consalt_form col-lg-5 col-sm-9">
+					<div>
+						<span>ФИО</span>
+						<input type="text" class="consalt_form_input">
+					</div>
+					<div>
+						<span>Почта</span>
+						<input type="text" class="consalt_form_input">
+					</div>
+					<div>
+						<span>Телефон</span>
+						<input type="text" class="consalt_form_input">
+					</div>
+					<button class="btn consalt_form_btn">Оставить заявку</button>
+				</form>
+				<div class="col-lg-5 col-sm-9">
+					<div class="title center">
+						<h3>Бесплатная консультация</h3>
+					</div>
+					<p>Оставьте нам свои данные в форме обратной связи, чтобы я мог проконсультировать вас насчет вашего сайта</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row footer">
+				<div class="col-lg-2 col-md-4 col-sm-9">
+					<ul class="footer_menu">
+						<li class="footer_menu_item"><a href="#header" class="footer_menu_item_link">Главная</a></li>
+						<li class="footer_menu_item"><a href="#works" class="footer_menu_item_link">Работы</a></li>
+						<li class="footer_menu_item"><a href="#about" class="footer_menu_item_link">Обо мне</a></li>
+						<li class="footer_menu_item"><a href="#price" class="footer_menu_item_link">Цены</a></li>
+						<li class="footer_menu_item"><a href="#footer" class="footer_menu_item_link">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-9">
+					<ul class="footer_menu">
+						<li class="footer_menu_item"><a href="drafts.html" class="footer_menu_item_link">Черновики</a></li>
+						<li class="footer_menu_item"><a href="other.html" class="footer_menu_item_link">Другие работы</a></li>
+						<li class="footer_menu_item"><a href="faq.html" class="footer_menu_item_link">ЧаВо</a></li>
+						<li class="footer_menu_item"><a href="cv.html" class="footer_menu_item_link">CV</a></li>
+					</ul>
+				</div>
+
+				<div class="contact-info col-lg-3 col-md-4 col-sm-9">
+					<a href="tel:+79636108762">8 (963) 610 87 62</a><br/><a href="ometov.sasha@mail.ru">ometov.sasha@mail.ru</a>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-sm-9 footer_logo">
+					<img src="img/OMET_LOGO.png" alt="">
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+	
+	<script type="text/javascript" src="js/libs.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
 </body>
-</html>

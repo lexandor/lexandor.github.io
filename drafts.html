@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Document</title>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="css/libs.min.css"/>
+        <link rel="stylesheet" href="css/main.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,700&display=swap&subset=cyrillic" rel="stylesheet"> <!--Montserrat-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous"> <!--Icons-->
+    </head>
+<body>
+    <style>
+        main{
+            padding: 50px;
+        }
+        
+        a, a:visited{
+            color: #000;
+        }
+
+        a:hover{
+            color: red;
+        }
+
+        .back{
+            font-size: 4rem;
+        }
+
+        .list{
+            margin-top: 20px;
+            font-size: 3rem;
+        }
+
+        .list_item{
+            margin-top: 10px;
+        } 
+
+        span{
+            font-size: 2.5rem;
+            color: #a7a7a7;
+            margin-left: 15px;
+            display: none;
+        }
+    </style>
+
+    <main>
+        <a href="index.html" class="back"> Go Back</a>
+        <hr>
+        <ul class="list">
+            <li class="list_item"><a href="Draft/ALP/html/index.html">ALP</a>
+                <span>Проект 4ого дня обучения html (брошен)</span>
+            </li>
+            <li class="list_item"><a href="Draft/ALP_2/index.html">ALP_2</a>
+                <span>Проект после недели изучения html</span>
+            </li>
+            <li class="list_item"><a href="Draft/ALP_3/index.html">ALP_3</a>
+                <span>Проект после 2ой недели изучения html</span>
+            </li>
+            <li class="list_item"><a href="Draft/ALP_PLEX_1/html/index.html">ALP_PLEX_1</a>
+                <span>Проект 2ого дня обучения html</span>
+            </li>
+            <li class="list_item"><a href="Draft/ALP_PLEX_2/html/index.html">ALP_PLEX_2</a>
+                <span>Проект 5ого дня обучения html (брошен)</span>
+            </li>
+            <li class="list_item"><a href="Draft/ALP_PLEX_3/index.html">ALP_PLEX_3</a>
+                <span>Проект 6ого дня обучения html (брошен)</span>
+            </li>
+            <li class="list_item"><a href="Draft/BoostFolia/index.html">BoostFolia</a>
+                <span>Проект месяца после обучения html (брошен)</span>
+            </li>
+            <li class="list_item"><a href="Draft/Comic/index.html">CWISOP</a>
+                <span>Проект посвященный комиксу, разработанному с другом. </span>
+            </li>
+            <li class="list_item"><a href="Draft/PLEX_2/index.html">PLEX_2</a>
+                <span>Тренировка навыков Bootstrap (брошен)</span>
+            </li>
+        </ul>
+    </main>
+
+    <script type="text/javascript" src="js/libs.min.js"></script>
+    <script>
+
+            $( "li a" ).hover(
+                function() {
+                    $( this ).next().show();
+                }, function() {
+                    $( this ).next().hide();
+                }
+            );
+
+    </script>
+</body>
+</html>
