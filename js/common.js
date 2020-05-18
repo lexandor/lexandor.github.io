@@ -94,16 +94,16 @@ $(document).ready(function() {
 
 	function getProgressBar(){
 			new Progress('#f-e', 70, {
-				html: 60,
-				css: 55,
+				html: 70,
+				css: 65,
 				js: 30,
 				react: 20
 			}, '#D66464');
 			new Progress('#b-e', 50, {
-				php: 50,
+				php: 35,
 				wp: 30,
-				py: 70,
-				dj: 2
+				py: 85,
+				dj: 70
 			}, '#D66464');
 			new Progress('#diz', 35, {
 				ps: 90,
@@ -165,6 +165,7 @@ $(document).ready(function() {
 	// }
 
 	var $rows = $('.price_list_item');
+	var valute = $('#price').data('valute')
 
 	cl('---------------------------')
 	
@@ -193,8 +194,15 @@ $(document).ready(function() {
 				var count = inp.val();// Количество
 
 				if (price != undefined && count != undefined) {
+
 					var amount = price * count;
-					$(this).parent().children().last().html(': ' + amount + ' руб');
+
+					if(valute == 'rub'){
+						$(this).parent().children().last().html(': ' + amount + ' руб');
+					} else if(valute == 'dol'){
+						$(this).parent().children().last().html(': ' + amount + ' $');
+					}
+					
 				}
 			});
 
@@ -214,8 +222,14 @@ $(document).ready(function() {
 				var count = inp.val();// Количество
 
 				if (price != undefined && count != undefined) {
+
 					var amount = price * count;
-					$(this).parent().children().last().html(': ' + amount + ' руб');
+
+					if(valute == 'rub'){
+						$(this).parent().children().last().html(': ' + amount + ' руб');
+					} else if(valute == 'dol'){
+						$(this).parent().children().last().html(': ' + amount + ' $');
+					}
 				}
 			});
 
@@ -230,7 +244,7 @@ $(document).ready(function() {
 
 					if (price.slice(-1) == "%"){
 
-						price = parseInt(price.slice(0,-1)) / 100;
+						pricePer = parseInt(price.slice(0,-1)) / 100;
 
 						var $amountList = $(this).parent().parent().prevAll();
 						var sum = 0;
@@ -239,24 +253,42 @@ $(document).ready(function() {
 
 								var li = $($amountList[item]);
 								amount = li.children('.price_list_form').find('.price_list_amount').html();
-								amount = parseInt(amount.slice(2,-3));
+
+								if(valute == 'rub'){
+									amount = parseInt(amount.slice(2,-3));
+								} else if(valute == 'dol'){
+									amount = parseInt(amount.slice(2,-1));
+								}
 								
 								sum += amount;
 							}
 						}
 
-						amount = sum * price;
-						$(this).parent().children().last().html(': ' + amount + ' руб');
+						amount = sum * pricePer;
+						amount = amount.toFixed(1)
+						if(valute == 'rub'){
+							$(this).parent().children().last().html(': ' + amount + ' руб');
+						} else if(valute == 'dol'){
+							$(this).parent().children().last().html(': ' + amount + ' $');
+						}
 
 					} else {
 						amount = price;
-						$(this).parent().children().last().html(': ' + amount + ' руб');
+						if(valute == 'rub'){
+							$(this).parent().children().last().html(': ' + amount + ' руб');
+						} else if(valute == 'dol'){
+							$(this).parent().children().last().html(': ' + amount + ' $');
+						}
 						
 					}
 				} else {
 					$(this).html('');
 					amount = 0;
-					$(this).parent().children().last().html(': ' + amount + ' руб');
+					if(valute == 'rub'){
+						$(this).parent().children().last().html(': ' + amount + ' руб');
+					} else if(valute == 'dol'){
+						$(this).parent().children().last().html(': ' + amount + ' $');
+					}
 				}
 			});
 
@@ -267,8 +299,14 @@ $(document).ready(function() {
 				var count = $(this).val();// Количество
 
 				if (price != undefined && count != undefined) {
+
 					var amount = price * count;
-					$(this).parent().children().last().html(': ' + amount + ' руб');
+
+					if(valute == 'rub'){
+						$(this).parent().children().last().html(': ' + amount + ' руб');
+					} else if(valute == 'dol'){
+						$(this).parent().children().last().html(': ' + amount + ' $');
+					}
 				}
 			});
 		}	
@@ -281,17 +319,29 @@ $(document).ready(function() {
 		event.preventDefault();
 
 		var $spans = $('.price_list_amount');
+		var valute = $('#price').data('valute')
 		
 		var result = 0;
-		
+		console.log(1)
 
 		for(var span in $spans){
-		if(parseInt(span) || parseInt(span) == 0){
-			amount = $($spans[span]).html();
-			amount = parseInt(amount.slice(2,-3));
-			result += amount;
-			resultPrice.html(result + 'руб');
-		}}
+			if(parseInt(span) || parseInt(span) == 0){
+				amount = $($spans[span]).html();
+				if(valute == 'rub'){
+					amount = parseInt(amount.slice(2,-3));
+				} else if(valute == 'dol'){
+					amount = parseInt(amount.slice(2,-1));
+				}
+				
+				result += amount;
+
+				if(valute == 'rub'){
+					resultPrice.html(result + ' руб');
+				} else if(valute == 'dol'){
+					resultPrice.html(result + ' $');
+				}
+			}
+		}
 		
 	});
 	

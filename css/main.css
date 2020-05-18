@@ -201,9 +201,14 @@ strong{
   -webkit-transition: background-color 0.4s;
   -o-transition: background-color 0.4s;
   transition: background-color 0.4s;
+  color: #000;
 }
 .header_btn:hover {
   background-color: #fff;
+}
+
+.header_btn a:visited {
+  color: #000;
 }
 
 .nav {
@@ -297,7 +302,7 @@ strong{
 }
 .work_card_item h4 {
   margin-bottom: 58px;
-  font-size: 4.8rem;
+  font-size: 4.4rem;
 }
 .work_card_item a {
   border: 3px solid #fff;
@@ -608,6 +613,44 @@ footer {
   color: #fff;
   border-bottom: 1px solid #fff;
 }
+
+/*===========================================
+               LANG CHOICE
+============================================*/
+
+.choice_page{
+  background-color: #000;
+  position: absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  overflow: hidden;
+  color: #fff;
+  padding-top: 100px;
+}
+
+.choice{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.choice a{
+  font-size: 3rem;
+  color: #D66464;
+}
+.choice a:visited{
+  font-size: 3rem;
+  color: #D66464;
+}
+
+.choice a:hover{
+  color: #ef5454;
+  border-bottom: 1px solid;
+  border-color: #ef5454;
+}
+
 
 /*===========================================
                MEDIA
