@@ -1,0 +1,597 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*===========================================
+               HELPERS
+============================================*/
+h1, h2, h3, h4, h5, h6, p, a, li, ul, div, span, button {
+  font-family: 'Montserrat';
+}
+
+html {
+  font-size: 10px;
+}
+
+div img {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+b {
+  font-weight: 800;
+}
+
+section {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1414px;
+  margin: auto;
+  padding: 100px 0px;
+}
+
+h1 {
+  font-size: 12.2rem;
+  line-height: 122px;
+  margin-bottom: 36px;
+}
+
+h2 {
+  font-size: 4.9rem;
+  line-height: 58px;
+  margin: 0px 0px 36px;
+}
+
+ul {
+  margin-bottom: 50px;
+}
+
+li {
+  line-height: 60px;
+}
+
+p, b, li, a, button {
+  font-size: 2.5rem;
+}
+
+.title {
+  margin-bottom: 92px;
+}
+
+/*===========================================
+               BUTTON
+============================================*/
+.btn {
+  background-color: #c7524f;
+  padding: 24px 54px 27px;
+  border: none;
+  color: #fff;
+}
+.btn:hover {
+  background-color: #d03e3a;
+}
+.btn:active {
+  background-color: #9e2521;
+  border: none;
+}
+.btn:focus {
+  outline: none;
+  -webkit-box-shadow: #4444446e 0px 0px 20px 8px;
+          box-shadow: #4444446e 0px 0px 20px 8px;
+}
+
+/*===========================================
+               MAIN
+============================================*/
+main {
+  min-height: 100vh;
+  background-color: #5486a2;
+  background-image: url(../img/main_b.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  -webkit-clip-path: polygon(0 0, 73.3% 0, 52.2% 100%, 0% 100%);
+          clip-path: polygon(0 0, 73.3% 0, 52.2% 100%, 0% 100%);
+  color: #fff;
+  padding: 14px 0px;
+}
+
+.main {
+  position: relative;
+  overflow: hidden;
+}
+
+.persona {
+  position: absolute;
+  height: 100%;
+  right: 16%;
+  bottom: -142px;
+}
+
+.tel {
+  font-size: 2.6rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-left: 123px;
+}
+
+/*===========================================
+               ABOUT
+============================================*/
+.about {
+  background-color: #151925;
+  background-image: url(../img/bg.jpg);
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.avatar {
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  width: 300px;
+  overflow: hidden;
+  float: left;
+  margin-right: 100px;
+}
+
+.name {
+  margin-bottom: 16px;
+}
+
+.social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 292px;
+}
+.social li {
+  height: 50px;
+  width: 50px;
+}
+.social li:last-child {
+  background-color: #fff;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+}
+.social li svg {
+  height: 100%;
+  width: 100%;
+}
+
+/*===========================================
+               FEATURES
+============================================*/
+.features {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0px;
+}
+.features li {
+  width: 47%;
+  height: 160px;
+  margin-bottom: 52px;
+}
+.features li svg {
+  float: left;
+  height: 50%;
+  margin-top: 7%;
+  margin-right: 25px;
+}
+.features li p {
+  line-height: 46px;
+  margin-bottom: 15px;
+}
+
+/*===========================================
+               PROGRAMS
+============================================*/
+.programs {
+  background-color: #151925;
+  color: #fff;
+}
+.programs_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin-bottom: 0px;
+}
+.programs_list li {
+  width: 400px;
+  margin-bottom: 65px;
+}
+
+.prev_img {
+  background-color: #fff;
+  height: 192px;
+}
+.prev_img img {
+  height: 100%;
+  width: 100%;
+}
+
+.description {
+  background-color: #5486a2;
+  line-height: 42px;
+  padding: 10px 32px;
+}
+
+/*===========================================
+               PRICE
+============================================*/
+.offers {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin-bottom: 0px;
+}
+.offers_desc {
+  padding: 0px 15px 15px;
+}
+.offers li {
+  width: 375px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: solid #5486a2 3px;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  margin-bottom: 40px;
+}
+.offers li h3 {
+  background-color: #5486a2;
+  color: #fff;
+  width: 100%;
+  font-weight: 800;
+  font-size: 4.8rem;
+  padding: 28px 0px;
+  margin: 0px 0px 28px;
+  text-align: center;
+}
+.offers li h4 {
+  margin: 80px 0px 50px;
+  font-weight: 800;
+  text-align: center;
+}
+.offers li p {
+  line-height: 36px;
+  margin-bottom: 36px;
+}
+.offers li .btn {
+  width: 100%;
+  margin-top: auto;
+}
+
+/*===========================================
+               PROCESS
+============================================*/
+.process {
+  border-top: 1px solid #f7f7f7;
+  position: relative;
+}
+
+.content {
+  width: 40%;
+}
+.content p {
+  line-height: 36px;
+  margin-bottom: 60px;
+}
+
+.calendar {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+}
+.calendar_mobile {
+  display: none;
+}
+
+/*===========================================
+               FOOTER
+============================================*/
+footer {
+  background-color: #151925;
+  color: #fff;
+}
+footer .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 50px 0px;
+}
+footer p {
+  margin-bottom: 38px;
+  line-height: 38px;
+}
+
+.cl {
+  margin-right: 100px;
+}
+.cl:last-child {
+  margin-right: 0px;
+  margin-left: auto;
+}
+
+.menu li {
+  line-height: 40px;
+}
+.menu li a {
+  color: #929292;
+  text-decoration: underline;
+}
+
+.grey {
+  color: #929292;
+}
+
+/*===========================================
+               MEDIA
+============================================*/
+@media screen and (max-width: 1800px) {
+  main {
+    -webkit-background-size: cover;
+            background-size: cover;
+  }
+
+  h1 {
+    font-size: 9.2rem;
+  }
+
+  h2 {
+    font-size: 4.5rem;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .container {
+    max-width: 80%;
+  }
+
+  .persona {
+    display: none;
+  }
+
+  main {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .offers li {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 10px;
+  }
+
+  .features li {
+    height: auto;
+    text-align: center;
+  }
+  .features li svg {
+    height: 160px;
+    margin: 0 auto;
+    float: none;
+  }
+}
+@media screen and (max-width: 1220px) {
+  footer .container {
+    display: block;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .avatar {
+    float: none;
+    margin: 0 auto 50px;
+  }
+
+  .about_desc {
+    margin: auto;
+    display: table;
+  }
+
+  .name {
+    text-align: center;
+    margin-bottom: 46px;
+  }
+  .name b {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 1020px) {
+  p {
+    font-size: 3rem;
+  }
+
+  .offers p {
+    margin-bottom: 30px;
+  }
+  .offers h4 {
+    font-size: 5rem;
+  }
+  .offers li {
+    width: 80%;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .calendar {
+    display: none;
+  }
+  .calendar_mobile {
+    display: block;
+    height: 400px;
+    margin: 50px auto;
+  }
+
+  .features li {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 70px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .container {
+    max-width: 92%;
+    padding: 50px 0px;
+  }
+
+  .tel {
+    display: block;
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
+  .programs_list li {
+    width: 80%;
+  }
+
+  .offers li {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 8px;
+  }
+
+  h1 {
+    font-size: 4rem;
+    line-height: 7rem;
+    font-weight: 800;
+  }
+
+  h2 {
+    font-size: 3.4rem;
+    line-height: 6rem;
+  }
+
+  .title {
+    font-size: 3.6rem;
+    font-weight: 800;
+  }
+
+  .avatar {
+    width: 200px;
+    height: 200px;
+  }
+
+  .name b {
+    font-size: 3.4rem;
+    line-height: 6rem;
+  }
+
+  .social {
+    width: 240px;
+  }
+
+  footer p {
+    font-size: 2.5rem;
+  }
+
+  .programs_list li {
+    width: 100%;
+  }
+
+  .features li {
+    width: 100%;
+  }
+
+  .calendar_mobile {
+    display: none;
+  }
+}
