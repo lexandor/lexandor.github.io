@@ -1,13 +1,3 @@
-// $(function() {
-
-	
-
-// });
-
-
-// МЕНЮ
-
-// TODO: Уточнить сколько интерактива делать
 
 $(document).ready(function() {
 
@@ -18,7 +8,10 @@ $(document).ready(function() {
 	let burger = $('.burger');
 	let nav = $('.nav');
 	let overlay = $('.overlay');
+	let accept_link = $('.accept_link');
+	let accept_cloud = $('.cloud');
 
+	// ОБРАБОТКА КНОПКИ ПОИСКА
 	searchBtn.on('click', function(event) {
 		if(window.innerWidth <= 992){
 			event.preventDefault();
@@ -43,6 +36,7 @@ $(document).ready(function() {
 		}
 	});
 
+	// ОБРАБОТКА КНОПКИ МЕНЮ
 	burger.on('click', function(event) {
 		overlay.toggleClass('display');
 		$(".burger span").toggleClass('active');
@@ -61,5 +55,16 @@ $(document).ready(function() {
 		}
 	});
 
+	// МАСКА ТЕЛЕФОНА
 	$('#phone').mask('+7(999) 999-99-99');
+
+	// ОКНО СОГЛАСИЯ
+	accept_link.hover(function(){
+		accept_cloud.show()
+	}, function(){
+		accept_cloud.hide()
+	});
+
+
+
 }); 
