@@ -10,6 +10,8 @@ $(document).ready(function() {
 	let overlay = $('.overlay');
 	let accept_link = $('.accept_link');
 	let accept_cloud = $('.cloud');
+	let support_btn = $('.support_btn');
+	let support= $('.support');
 
 	// ОБРАБОТКА КНОПКИ ПОИСКА
 	searchBtn.on('click', function(event) {
@@ -63,6 +65,12 @@ $(document).ready(function() {
 		accept_cloud.show()
 	}, function(){
 		accept_cloud.hide()
+	});
+
+
+	// ФОРМА ПОДДЕРЖКИ
+	support_btn.on('click', function(event) {
+		support.toggleClass('active');
 	});
 
 
