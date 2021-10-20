@@ -61,11 +61,19 @@ $(document).ready(function() {
 	$('#phone').mask('+7(999) 999-99-99', {autoclear: false});
 
 	// ОКНО СОГЛАСИЯ
-	accept_link.hover(function(){
-		accept_cloud.show()
-	}, function(){
-		accept_cloud.hide()
-	});
+	if(window.innerWidth >= 992){
+		accept_link.hover(function(){
+			accept_cloud.show()
+		}, function(){
+			accept_cloud.hide()
+		});
+	} else {
+		accept_link.on('click', function(event) {
+			event.preventDefault();
+			accept_cloud.toggleClass('display');
+			console.log('1');
+		});
+	}
 
 
 	// ФОРМА ПОДДЕРЖКИ
