@@ -11,7 +11,12 @@ $(document).ready(function() {
 	let accept_link = $('.accept_link');
 	let accept_cloud = $('.cloud');
 	let support_btn = $('.support_btn');
-	let support= $('.support');
+	let support = $('.support');
+
+	let phone = $('#phone');
+	let phone_btn = $('.order_btn');
+	let err_mess = $('.mistake');
+	let ok_mess = $('.ok');
 
 	// ОБРАБОТКА КНОПКИ ПОИСКА
 	searchBtn.on('click', function(event) {
@@ -82,5 +87,18 @@ $(document).ready(function() {
 	});
 
 
+	phone_btn.on('click', function(event) {
+		event.preventDefault();
 
+		// ТУТ МАГИЯ
+		if (phone.val() == '+7(000) 000-00-00' || phone.val() == ''){
+			err_mess.css( "display", "block" )
+			ok_mess.hide()
+		} else {
+			ok_mess.css( "display", "block" )
+			err_mess.hide()
+		}
+	});
+	
+	
 }); 
