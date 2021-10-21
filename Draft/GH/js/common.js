@@ -90,13 +90,14 @@ $(document).ready(function() {
 	phone_btn.on('click', function(event) {
 		event.preventDefault();
 
-		// ТУТ МАГИЯ
-		if (phone.val() == '+7(000) 000-00-00' || phone.val() == ''){
+		// ТУТ НАЧИНАЕТСЯ МАГИЯ
+		if (phone.val() == '+7(000) 000-00-00' || phone.val() == '' || /_/.test(phone.val())){
 			err_mess.css( "display", "block" )
 			ok_mess.hide()
 		} else {
 			ok_mess.css( "display", "block" )
 			err_mess.hide()
+			
 		}
 	});
 	
