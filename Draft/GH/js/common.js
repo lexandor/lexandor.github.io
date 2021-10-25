@@ -17,7 +17,9 @@ $(document).ready(function() {
 
 	let phone = $('#phone');
 	let phone_btn = $('.order_btn');
+	let checkbox = $('.accept_checkbox input')
 	let err_mess = $('.mistake');
+	let agree_mess =$('.agreement');
 	let ok_mess = $('.ok');
 
 	// ОБРАБОТКА КНОПКИ ПОИСКА
@@ -93,14 +95,26 @@ $(document).ready(function() {
 		event.preventDefault();
 
 		// ТУТ НАЧИНАЕТСЯ МАГИЯ
-		if (phone.val() == '+7(000) 000-00-00' || phone.val() == '' || /_/.test(phone.val())){
-			err_mess.css( "display", "block" )
-			ok_mess.hide()
+
+		console.log(checkbox.prop("checked"));
+
+		if (checkbox.prop("checked")){
+			if (phone.val() == '+7(000) 000-00-00' || phone.val() == '' || /_/.test(phone.val())){
+				err_mess.css( "display", "block" )
+				ok_mess.hide()
+				agree_mess.hide()
+			} else {
+				ok_mess.css( "display", "block" )
+				err_mess.hide()
+				agree_mess.hide()
+			}
 		} else {
-			ok_mess.css( "display", "block" )
+			agree_mess.css( "display", "block" )
+			ok_mess.hide()
 			err_mess.hide()
-			
 		}
+
+		
 	});
 	
 	
