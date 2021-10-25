@@ -8,10 +8,12 @@ $(document).ready(function() {
 	let burger = $('.burger');
 	let nav = $('.nav');
 	let overlay = $('.overlay');
+
 	let accept_link = $('.accept_link');
 	let accept_cloud = $('.cloud');
-	let support_btn = $('.support_btn');
-	let support = $('.support');
+
+	let support_btn = $('.support_form_btn');
+	let support_msg = $('.support_message');
 
 	let phone = $('#phone');
 	let phone_btn = $('.order_btn');
@@ -76,14 +78,14 @@ $(document).ready(function() {
 		accept_link.on('click', function(event) {
 			event.preventDefault();
 			accept_cloud.toggleClass('display');
-			console.log('1');
 		});
 	}
 
 
 	// ФОРМА ПОДДЕРЖКИ
 	support_btn.on('click', function(event) {
-		support.toggleClass('active');
+		event.preventDefault();
+		support_msg.show();
 	});
 
 
