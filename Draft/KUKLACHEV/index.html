@@ -10,14 +10,50 @@
 </head>
 
 <body>
+
+	<header class="header">
+		<div class="img logo"><img src="./img/logo.png" alt="логотип"></div>
+
+		<h1>ONLINE-ТЕАТР КУКЛАЧЕВА</br>
+			ПРИГЛАШАЕТ</h1>
+	</header>
+
+	<section id="target">
+
+		<h2>СМОТРИТЕ СПЕКТАКЛИ</br>
+			В ПРЯМОМ ЭФИРЕ!!!</h2>
+
+		<div class="video_wrapper">
+			<video src="./img/circus.mp4" class="video" autoplay></video>
+		</div>
+
+		<h3>Дарим 30% скидку</br>
+			своим первым online-зрителям</h3>
+
+			<a href="#" class="btn btn_sale">Получить скидку</a>
+
+		<h4>Предложение действует 10 минут</h4>
+
+		<div class="timer">
+			<div class="flipper" 
+			data-reverse="true" 
+			data-template="HH|ii|ss"
+      		data-labels="часов|минут|секунд" 
+			id="timer"></div>
+		</div>
+
+		
+
+	</section>
+
 	<!-- ПЕРВЫЙ ЭКРАН -->
 	<section id="first">
 
-		<!-- заголовок -->
+		<!-- заголовок
 		<div class="title">
 			<h1>Театр кошек куклачёва стал ближе!</h1>
 			<h2>Смотрите спектакли в прямом эфире!!!</h2>
-		</div>
+		</div> -->
 
 		<h2><b>5</b> причин посмотреть спектакль online</h2>
 
@@ -77,10 +113,10 @@
 		<!-- СПИСОК ПРИЧИН КОНЕЦ-->
 
 		<!-- кнопка -->
-		<a href="#" class="btn">Выбор спектакля</a>
+		<a href="#" class="btn">Выбрать спектакль</a>
 		
 		<!-- стрелка прокрутки -->
-		<a href="#second" class="arrow_btn"><img src="./img/arrow.png" alt="#"></a>
+		<!-- <a href="#second" class="arrow_btn"><img src="./img/arrow.png" alt="#"></a> -->
 		
 		<div class="background_img"><img src="./img/clown.png" alt="#"></div>
 	</section>
@@ -134,7 +170,7 @@
 
 		<div class="question">
 			<h2>Сколько стоит online-билет?</h2>
-			<p class="answer">Стоимость online-билета всего <b>300₽</b></p>
+			<p class="answer">Стоимость online-билета всего <b>500₽</b></p>
 			<p class="answer">
 				Вы увидите спектакль с самых лучших ракурсов по цене ниже, чем билет в последнем ряду партера!
 			</p>
@@ -163,13 +199,40 @@
 		</div>
 		
 
-		<a href="#" class="btn">Купить online-билет</a>
-		<a href="#" class="btn btn_analog">Попробовать</a>
+		<a href="#" class="btn">Выбрать спектакль</a>
+		<a href="#" class="btn btn_analog">Получить скидку</a>
 
 		<div class="background_img"><img src="./img/question.png" alt="#"></div>
 
 	</section>
 	<!-- ТРЕТИЙ ЭКРАН КОНЕЦ-->
+
+		<div class="popup">
+			<a href="#" class="popup_close"><img src="./img/close.png" alt="#"></a>
+
+			<div class="popup_inner">
+				<h4>Дарим скидку 30% на первое посещение online-театра!</h4>
+
+				<form action="#" class="popup_form">
+					<label for="email">Пришлите мне промокод со скидкой на Email</label>
+					<input id="email" name="email" class="popup_form_input" type="email"
+						placeholder="Email адрес"
+						required>
+					<p class="popup_alert"></p>
+					<button class="btn popup_btn">Получить промокод</button>
+				</form>
+
+				
+
+				<p class="desc">никакого спама, ваши данные не попадут к 3-м лицам</p>
+			</div>
+
+			<div class="popup_complite">
+				<h4>Спасибо!<br>Промокод со скидкой отправлен на указанный email</h4>
+			</div>
+		</div>
+	
+	
 
 	<script src="js/scripts.min.js"></script>
 </body>
