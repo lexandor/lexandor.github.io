@@ -8,12 +8,21 @@ $(document).ready(function() {
 
     let timer_date = `${date.getFullYear()}-${date.getDate()}-${date.getMonth()+1} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
 
+    setTimeout(() => {
+        timer.flipper('stop');
+    }, 1000*60*10)
+
     $(function(){
         timer.attr( "data-datetime", timer_date ) 
         timer.flipper('init');
     });    
 
     // РАБОТА С POPUP
+
+    function validateEmail(email) {
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    }
 
     let popup        = $('.popup');
     let pop_input    = $('.popup_form_input');
@@ -48,6 +57,9 @@ $(document).ready(function() {
             pop_input.css( "border", "2px solid red" );
         } else if( !(/@/.test(pop_input.val())) ){
             pop_alert.text("введен несуществующий e-mail");
+            pop_input.css( "border", "2px solid red" );
+        } else if(!(validateEmail(pop_input.val()))){
+            pop_alert.text("введен некорректный e-mail");
             pop_input.css( "border", "2px solid red" );
         } else {
             pop_inner.css( "display", "none" );
