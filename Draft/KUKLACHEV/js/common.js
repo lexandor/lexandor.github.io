@@ -47,10 +47,6 @@ $(document).ready(function() {
 
     pop_btn.on('click', function(event) {
 		event.preventDefault();
-    
-        console.log('-----');
-        console.log(pop_input.val());
-        console.log(!(/@/.test(pop_input.val())));
 
         if (pop_input.val() == ''){
             pop_alert.text("укажите e-mail для отправки");
@@ -69,6 +65,9 @@ $(document).ready(function() {
 
     pop_close.on('click', function(event) {
 		event.preventDefault();
+        pop_inner.css( "display", "block" );
+        pop_complite.css( "display", "none" );
+        pop_input.val('');
         popup.css( "display", "none" );
     });
 
