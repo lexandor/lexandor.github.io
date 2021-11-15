@@ -26,7 +26,16 @@
 			В ПРЯМОМ ЭФИРЕ!!!</h2>
 
 		<div class="video_wrapper">
-			<video src="./img/circus.mp4" class="video" autoplay></video>
+			<video src="./img/circus.mp4"
+					class="video" 
+					preload="auto" 
+					no-controls 
+					autoplay 
+					loop
+					playsinline 
+					muted>
+				<source src="./img/circus.mp4" type='video/mp4' />
+			</video>
 		</div>
 
 		<h3>Дарим 30% скидку</br>
