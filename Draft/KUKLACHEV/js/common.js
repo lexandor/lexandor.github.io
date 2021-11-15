@@ -67,7 +67,9 @@ $(document).ready(function() {
 		event.preventDefault();
         pop_inner.css( "display", "block" );
         pop_complite.css( "display", "none" );
-        pop_input.val('');
+        //pop_input.val("");
+        pop_alert.text("");
+        pop_input.css( "border", "2px solid #ff9900" );
         popup.css( "display", "none" );
     });
 
