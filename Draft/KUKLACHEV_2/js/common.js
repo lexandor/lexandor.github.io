@@ -9,10 +9,14 @@ $(document).ready(function() {
     let t_timer_date = `${t_date.getFullYear()}-${t_date.getMonth()+1}-${t_date.getDate()} ${t_date.getHours()}:${t_date.getMinutes()}:${t_date.getSeconds()}`
     
     let translation_menu = $('.translation_menu');
+    let login = false; // флаг -> введён ли пользователем код
 
     setTimeout(() => {
         t_timer.flipper('stop');
-        translation_menu.css( "display", "none" )
+        if (login){
+            translation_menu.css( "display", "none" )
+        }
+        
     }, 1000*60) // остановка таймера
 
     $(function(){
@@ -76,6 +80,7 @@ $(document).ready(function() {
             popup_code.css( "display", "none" );
             overlay.css( "display", "none" );
 
+            login = true;
             let now_time = new Date;
             now_time = `${now_time.getFullYear()}-${now_time.getDate()}-${now_time.getMonth()+1} ${now_time.getHours()}:${now_time.getMinutes()}:${now_time.getSeconds()}`
 
