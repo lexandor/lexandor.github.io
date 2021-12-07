@@ -4,16 +4,16 @@ $(document).ready(function() {
     // РАБОТА С ТАЙМЕРОМ ТРАНСЛЯЦИИ
     let t_timer = $('#translation_timer');
     let t_date = new Date;
-    t_date.setMinutes(t_date.getMinutes()+10);
+    t_date.setMinutes(t_date.getMinutes()+1);
 
-    let t_timer_date = `${t_date.getFullYear()}-${t_date.getDate()}-${t_date.getMonth()+1} ${t_date.getHours()}:${t_date.getMinutes()}:${t_date.getSeconds()}`
-
+    let t_timer_date = `${t_date.getFullYear()}-${t_date.getMonth()+1}-${t_date.getDate()} ${t_date.getHours()}:${t_date.getMinutes()}:${t_date.getSeconds()}`
+    
     let translation_menu = $('.translation_menu');
 
     setTimeout(() => {
         t_timer.flipper('stop');
         translation_menu.css( "display", "none" )
-    }, 1000*60*10)
+    }, 1000*60) // остановка таймера
 
     $(function(){
         t_timer.attr( "data-datetime", t_timer_date ) 
