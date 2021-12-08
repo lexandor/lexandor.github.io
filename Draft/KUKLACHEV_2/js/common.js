@@ -114,7 +114,6 @@ $(document).ready(function() {
     pop_btn_mail.on('click', function(event) {
         event.preventDefault();
 
-        console.log(!(validateEmail(pop_input_mail.val())));
 
         if (pop_input_mail.val() == ''){
 
