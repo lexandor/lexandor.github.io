@@ -15,7 +15,23 @@ $(document).ready(function() {
     $(function(){
         timer.attr( "data-datetime", timer_date ) 
         timer.flipper('init');
-    });    
+    });
+
+    // РАБОТА С ТАЙМЕРОМ ТРАНСЛЯЦИИ
+    let t_timer = $('#translation_timer');
+    let t_date = new Date;
+    t_date.setMinutes(t_date.getMinutes()+10);
+
+    let t_timer_date = `${t_date.getFullYear()}-${t_date.getDate()}-${t_date.getMonth()+1} ${t_date.getHours()}:${t_date.getMinutes()}:${t_date.getSeconds()}`
+
+    setTimeout(() => {
+        t_timer.flipper('stop');
+    }, 1000*60*10)
+
+    $(function(){
+        t_timer.attr( "data-datetime", t_timer_date ) 
+        t_timer.flipper('init');
+    });
 
     // РАБОТА С POPUP
 
@@ -23,6 +39,8 @@ $(document).ready(function() {
         const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(email).toLowerCase());
     }
+
+    let lang = $('html').attr('lang')
 
     let popup        = $('.popup');
     let pop_input    = $('.popup_form_input');
@@ -33,6 +51,8 @@ $(document).ready(function() {
     let pop_alert    = $('.popup_alert');
     let pop_inner    = $('.popup_inner');
     let pop_complite = $('.popup_complite');
+
+
 
     btn_sale.on('click', function(event) {
 		event.preventDefault();
@@ -49,13 +69,31 @@ $(document).ready(function() {
 		event.preventDefault();
 
         if (pop_input.val() == ''){
-            pop_alert.text("укажите e-mail для отправки");
+
+            if (lang === "JP"){
+                pop_alert.text("送信する電子メールを指定します");
+            } else {
+                pop_alert.text("укажите e-mail для отправки");
+            }
+            // pop_alert.text("укажите e-mail для отправки");
             pop_input.css( "border", "2px solid red" );
         } else if( !(/@/.test(pop_input.val())) ){
-            pop_alert.text("введен несуществующий e-mail");
+
+            if (lang === "JP"){
+                pop_alert.text("存在しない電子メールが入力されました");
+            } else {
+                pop_alert.text("введен несуществующий e-mail");
+            }
+            // pop_alert.text("введен несуществующий e-mail");
             pop_input.css( "border", "2px solid red" );
         } else if(!(validateEmail(pop_input.val()))){
-            pop_alert.text("введен некорректный e-mail");
+
+            if (lang === "JP"){
+                pop_alert.text("誤った電子メールが入力されました");
+            } else {
+                pop_alert.text("введен некорректный e-mail");
+            }
+            // pop_alert.text("введен некорректный e-mail");
             pop_input.css( "border", "2px solid red" );
         } else {
             pop_inner.css( "display", "none" );

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="JP">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.min.css">
+	<title>CLOWNS JP</title>
+</head>
+
+<body>
+	<!-- ШАПКА -->
+	<header class="header">
+		<div class="img logo"><img src="./img/logo.png" alt="логотип"></div>
+
+		<h1>クックラチョフのオンライン劇場</br>
+			ご招待します</h1>
+	</header>
+	<!-- ШАПКА КОНЕЦ -->
+
+	<!-- ЦЕЛЕВОЙ ЭКРАН -->
+	<section id="target">
+
+		<h2>公演をご視聴ください。</br>
+			ライブ放送</h2>
+
+		<div class="video_wrapper">
+			<video src="./img/circus.mp4"
+					class="video" 
+					preload="auto" 
+					no-controls 
+					autoplay 
+					loop
+					playsinline 
+					muted>
+				<source src="./img/circus.mp4" type='video/mp4' />
+			</video>
+		</div>
+
+		<h3>初回オンライン視聴者の皆さんに30％</br>
+			の割引をプレゼント</h3>
+
+			<a href="#" class="btn btn_sale">割引取得</a>
+
+		<h4>配布期限　10分以内</h4>
+
+		<div class="timer">
+			<div class="flipper" 
+			data-reverse="true" 
+			data-template="HH|ii|ss"
+      		data-labels="時間|分|秒" 
+			id="timer"></div>
+		</div>
+
+		<!-- стрелка прокрутки -->
+		<a href="#first" class="arrow_btn"><img src="./img/arrow.png" alt="#"></a>
+	</section>
+	<!-- ЦЕЛЕВОЙ ЭКРАН КОНЕЦ -->
+
+	<!-- ПЕРВЫЙ ЭКРАН -->
+	<section id="first">
+
+		<!-- заголовок
+		<div class="title">
+			<h1>Театр кошек куклачёва стал ближе!</h1>
+			<h2>Смотрите спектакли в прямом эфире!!!</h2>
+		</div> -->
+
+		<h2>オンライン公演ご視聴の五つの理由</h2>
+
+		<!-- СПИСОК ПРИЧИН -->
+		<ul class="reasons">
+			<li class="reasons_item">
+				<div class="icon"><img src="./img/comfort.png" alt="#"></div>
+				<div class="reason_desc">
+					<h3 class="reasons_subtitle">便利と快適</h3>
+					<p class="reasons_text">
+						各公演はライブ配信です。公演を観るために必要なものはインタネットに繋いでいるスマホかタブレット/PCだけです。</p>
+				</div>
+			</li>
+			<!-- этот пункт через переводчик -->
+			<li class="reasons_item"> 
+				<div class="icon"><img src="./img/garant.png" alt="#"></div>
+				<div class="reason_desc">
+					<h3 class="reasons_subtitle">保証</h3>
+					<p class="reasons_text">
+						チケットを有効にして公演を見ることができませんでしたか？ いいえ問題ありません!
+						私たちは完全に無料で別の日付のために同じもののためにあなたのチケットを交換します!
+					</p>
+				</div>
+			</li>
+			<li class="reasons_item">
+				<div class="icon"><img src="./img/star.png" alt="#"></div>
+				<div class="reason_desc">
+					<h3 class="reasons_subtitle">最も観やすい座席</h3>
+					<p class="reasons_text">
+						観やすさ、舞台プレゼンス感、バックヤードへの訪問のチャンスがあります。
+					</p>
+				</div>
+			</li>
+			<li class="reasons_item">
+				<div class="icon"><img src="./img/virus.png" alt="#"></div>
+				<div class="reason_desc">
+					<h3 class="reasons_subtitle">安全性</h3>
+					<p class="reasons_text">
+						オンライン視聴者の皆さんにはウイルスは感染しません。
+					</p>
+				</div>
+			</li>
+			<li class="reasons_item">
+				<div class="icon"><img src="./img/money.png" alt="#"></div>
+				<div class="reason_desc">
+					<h3 class="reasons_subtitle">お得</h3>
+					<p class="reasons_text">
+						視聴券一枚で端末一台の視聴アクセスが可能です。家族全員で一画面の前に集まり、猫の劇場の公演を楽しめることができます。
+					</p>
+				</div>
+			</li>
+		</ul>
+		<!-- СПИСОК ПРИЧИН КОНЕЦ-->
+
+		<!-- кнопка -->
+		<a href="#" class="btn">公演選択</a>
+		
+		<div class="background_img"><img src="./img/clown.png" alt="#"></div>
+	</section>
+	<!-- ПЕРВЫЙ ЭКРАН КОНЕЦ -->
+
+	<!-- ВТОРОЙ ЭКРАН -->
+	<section id="second">
+		<h2>オンライン視聴者とは</h2>
+		<p class="intro">人気を呼んでいるクックラチョフの猫劇場の公演を観に行きたい愛好者の皆さんが数多くいらっしゃると思いますが、行くことができない皆さんも少なくないです。
+		</p>
+
+		<b class="offers_special">その皆さんに特別なキャンペーンを実施中です。</b>
+
+		<ul class="offers">
+			<li class="offers_item">
+				<div class="icon"><img src="./img/one.png" alt="#"></div>
+				<div class="offers_desc">
+					<h3 class="offers_subtitle">観やすさ</h3>
+					<p class="offers_text">このような公演を観たことがあるのはまだ誰もいないと思います。</p>
+				</div>
+			</li>
+			<li class="offers_item">
+				<div class="icon"><img src="./img/two.png" alt="#"></div>
+				<div class="offers_desc">
+					<h3 class="offers_subtitle">プレゼンス効果</h3>
+					<p class="offers_text">最も面白いポイントを楽しんでいただけるように舞台の上にカメラを三台設置しました。</p>
+				</div>
+			</li>
+			<li class="offers_item">
+				<div class="icon"><img src="./img/three.png" alt="#"></div>
+				<div class="offers_desc">
+					<h3 class="offers_subtitle">ライブ配信</h3>
+					<p class="offers_text">各公演はライブ配信ですので、動画配信はしません。</p>
+				</div>
+			</li>
+		</ul>
+
+		<p class="outro">オンライン視聴者の皆さんをお迎えする用意ができました。</p>
+
+		<a href="#" class="btn btn_outline">視聴</a>
+
+		<div class="background_img"><img src="./img/backstage.png" alt="#"></div>
+
+	</section >
+	<!-- ВТОРОЙ ЭКРАН КОНЕЦ -->
+
+	<!-- ТРЕТИЙ ЭКРАН -->
+	<section id="third">
+
+		<div class="question">
+			<h2>視聴券の料金は？</h2>
+			<p class="answer">オンライン公演視聴券の料金は<b>1000円</b>です。</p>
+			<p class="answer">
+				劇場での一階前方の一等席よりも料金が安く、観やすい視点から公演をお楽しみいただけます。
+			</p>
+		</div>
+
+		<div class="question">
+			<h2>二人でも視聴が可能？</h2>
+			<div class="answer">
+				視聴券一枚で端末一台に限って家族全員で公演をお楽しみいただけます。
+			</div>
+			<div class="answer">
+				お互いに離れている方の場合は、端末ごとにチケットが一枚ずつ必要となります。
+			</div>
+		</div>
+
+		<div class="question">
+			<h2>Чチケットを忘れたとか、インタネット環境が良くなかったような理由で、公演を観ることができなかった場合はどうなりますか。</h2>
+			<div class="answer">
+				技術的なトラブルなどの理由によりチケットを使用できなかった場合には、ご都合の良い日時に変更して同じ公演のチケットをご提供いたします。
+			</div>
+		</div>
+		
+
+		<a href="#" class="btn">公演選択　</a>
+		<a href="#" class="btn btn_analog">割引取得</a>
+
+		<div class="background_img"><img src="./img/question.png" alt="#"></div>
+
+	</section>
+	<!-- ТРЕТИЙ ЭКРАН КОНЕЦ-->
+
+		<div class="popup">
+			<a href="#" class="popup_close"><img src="./img/close.png" alt="#"></a>
+
+			<div class="popup_inner">
+				<h4>私たちはあなたにオンライン劇場への最初の訪問の30％の割引を与えます!</h4>
+
+				<form action="#" class="popup_form">
+					<label for="email">私に電子メールで割引プロモーションコードを送信</label>
+					<input id="email" name="email" class="popup_form_input" type="email"
+						placeholder="Email"
+						required>
+					<p class="popup_alert"></p>
+					<button class="btn popup_btn">プロモーションコードを取得する</button>
+				</form>
+
+				
+
+				<p class="desc">いいえスパムは、あなたのデータは、第3の当事者に取得することはありません</p>
+			</div>
+
+			<div class="popup_complite">
+				<h4>ありがとう!<br>割引プロモーションコードが指定された電子メールに送信されました</h4>
+			</div>
+		</div>
+	
+	
+
+	<script src="js/scripts.min.js"></script>
+</body>
+
+</html>
