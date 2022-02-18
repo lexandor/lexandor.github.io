@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
 
-@mixin center{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
 
 body, p{
     padding: 0px;
@@ -63,8 +57,16 @@ header{
     background: #C4C4C4;
     height: 400px;
     margin-top: 4px;
-    position: relative;
     padding-right: 74px;
+
+
+    padding-right: 0px;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: " . redblock  sidebar";
+    align-items: center;
+    justify-items: center;
 }
 
 .redblock{
@@ -72,7 +74,9 @@ header{
     width: 694px;
     height: 300px;
 
-    @include center
+    grid-area: redblock;
+    display: grid;
+
 }
 
 .darkredblock{
@@ -80,15 +84,15 @@ header{
     width: 228px;
     height: 50px;
 
-    @include center
+    grid-area: darkredblock;
 }
 
 .sidebar{
     background: #898DE1;
-
     height: 100%;
     width: 74px;
-    position: absolute;
-    right: 0px;
-    top: 0px;
+
+    grid-area: sidebar;
+    justify-self: end;
+
 }
